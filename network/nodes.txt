@@ -1,0 +1,2866 @@
+     1                        Manchester United
+     2                             Liverpool FC
+     3                               Chelsea FC
+     4                               Arsenal FC
+     5                               Everton FC
+     6                              Aston Villa
+     7                                Fulham FC
+     8                        Tottenham Hotspur
+     9                          West Ham United
+    10                          Manchester City
+    11                           Wigan Athletic
+    12                               Stoke City
+    13                         Bolton Wanderers
+    14                            Portsmouth FC
+    15                         Blackburn Rovers
+    16                           Sunderland AFC
+    17                                Hull City
+    18                  Wolverhampton Wanderers
+    19                          Birmingham City
+    20                               Burnley FC
+    21                             Blackpool FC
+    22                     West Bromwich Albion
+    23                         Newcastle United
+    24                             Swansea City
+    25                             Norwich City
+    26                      Queens Park Rangers
+    27                           Southampton FC
+    28                               Reading FC
+    29                             Cardiff City
+    30                           Crystal Palace
+    31                           Leicester City
+    32                          AFC Bournemouth
+    33                               Watford FC
+    34                         Middlesbrough FC
+    35                   Brighton & Hove Albion
+    36                        Huddersfield Town
+    37                         Sheffield United
+    38                             Leeds United
+    39                             Brentford FC
+    40                         Racing Santander
+    41                                Getafe CF
+    42                               UD Almería
+    43                           Sporting Gijón
+    44                                Málaga CF
+    45                            Villarreal CF
+    46                              Valencia CF
+    47                   Deportivo de La Coruña
+    48                   RCD Espanyol Barcelona
+    49                              CD Tenerife
+    50                       Atlético de Madrid
+    51                          Athletic Bilbao
+    52                              Real Madrid
+    53                               Sevilla FC
+    54                       Real Valladolid CF
+    55                               CA Osasuna
+    56                             RCD Mallorca
+    57                            Real Zaragoza
+    58                                 Xerez CD
+    59                             FC Barcelona
+    60                              Hércules CF
+    61                               Levante UD
+    62                            Real Sociedad
+    63                               Granada CF
+    64                           Rayo Vallecano
+    65                      Real Betis Balompié
+    66                            Celta de Vigo
+    67                                 Elche CF
+    68                                 SD Eibar
+    69                               Córdoba CF
+    70                            UD Las Palmas
+    71                         Deportivo Alavés
+    72                               CD Leganés
+    73                                Girona FC
+    74                                SD Huesca
+    75                                 Cádiz CF
+    76                        FC Internazionale
+    77                                  AS Roma
+    78                                 AC Milan
+    79                             UC Sampdoria
+    80                               US Palermo
+    81                               SSC Napoli
+    82                              Juventus FC
+    83                                 Parma FC
+    84                                Genoa CFC
+    85                                  AS Bari
+    86                           ACF Fiorentina
+    87                              Atalanta BC
+    88                                 SS Lazio
+    89                              Robur Siena
+    90                           Calcio Catania
+    91                            Chievo Verona
+    92                           Udinese Calcio
+    93                          Cagliari Calcio
+    94                          Bologna FC 1909
+    95                               AS Livorno
+    96                                AC Cesena
+    97                                 US Lecce
+    98                           Brescia Calcio
+    99                       Novara Calcio 1908
+   100                     Delfino Pescara 1936
+   101                                Torino FC
+   102                              US Sassuolo
+   103                            Hellas Verona
+   104                                Empoli FC
+   105                              Inter Milan
+   106                            Carpi FC 1909
+   107                         Frosinone Calcio
+   108                               FC Crotone
+   109                         Benevento Calcio
+   110                                SPAL 2013
+   111                        Parma Calcio 1913
+   112                                     SPAL
+   113                            Spezia Calcio
+   114                                FC Empoli
+   115                      US Salernitana 1919
+   116                               Venezia FC
+   117                            VfL Wolfsburg
+   118                               VfL Bochum
+   119                               Hertha BSC
+   120                            Bayern Munich
+   121                            VfB Stuttgart
+   122                             Hamburger SV
+   123                        Borussia Dortmund
+   124                      TSG 1899 Hoffenheim
+   125                            FC Schalke 04
+   126                      Bayer 04 Leverkusen
+   127                         SV Werder Bremen
+   128                              Hannover 96
+   129                               1. FC Köln
+   130                      Eintracht Frankfurt
+   131                 Borussia Mönchengladbach
+   132                              SC Freiburg
+   133                           1.FSV Mainz 05
+   134                           1.FC Nuremberg
+   135                             FC St. Pauli
+   136                      1.FC Kaiserslautern
+   137                              FC Augsburg
+   138                     SpVgg Greuther Fürth
+   139                       Fortuna Düsseldorf
+   140                   Eintracht Braunschweig
+   141                          SC Paderborn 07
+   142                         FC Ingolstadt 04
+   143                          SV Darmstadt 98
+   144                               RB Leipzig
+   145                        1.FC Union Berlin
+   146                        Arminia Bielefeld
+   147                                  RC Lens
+   148                              US Boulogne
+   149                          Valenciennes FC
+   150                         Grenoble Foot 38
+   151                    Le Mans Union Club 72
+   152                        AS Nancy-Lorraine
+   153                               FC Lorient
+   154                               LOSC Lille
+   155                           Olympique Lyon
+   156                          Montpellier HSC
+   157                    FC Girondins Bordeaux
+   158                   FC Sochaux-Montbéliard
+   159                         AS Saint-Étienne
+   160                      Paris Saint-Germain
+   161                                 OGC Nice
+   162                              FC Toulouse
+   163                               AJ Auxerre
+   164                         Stade Rennais FC
+   165                      Olympique Marseille
+   166                                AS Monaco
+   167                                  SM Caen
+   168                        Stade Brestois 29
+   169                   Athlétic Club Arlésien
+   170                 FC Évian Thonon Gaillard
+   171                                Dijon FCO
+   172                               AC Ajaccio
+   173                              Stade Reims
+   174                             ESTAC Troyes
+   175                                SC Bastia
+   176                              EA Guingamp
+   177                                FC Nantes
+   178                                  FC Metz
+   179                               SCO Angers
+   180                              GFC Ajaccio
+   181                                Amiens SC
+   182                     RC Strasbourg Alsace
+   183                          Nîmes Olympique
+   184                         Clermont Foot 63
+   185                                 FC Porto
+   186                              Sporting CP
+   187                               SL Benfica
+   188                              CD Nacional
+   189                                 SC Braga
+   190                               Leixões SC
+   191                        Académica Coimbra
+   192                     Vitória Guimarães SC
+   193                              CS Marítimo
+   194                     FC Paços de Ferreira
+   195                               Rio Ave FC
+   196                         Naval 1º de Maio
+   197                       Vitória Setúbal FC
+   198                             SC Olhanense
+   199                          União de Leiria
+   200                             SC Beira-Mar
+   201                          Portimonense SC
+   202                           Gil Vicente FC
+   203                              CD Feirense
+   204                         GD Estoril Praia
+   205                            Moreirense FC
+   206                                FC Arouca
+   207                              FC Penafiel
+   208                              Boavista FC
+   209                               CD Tondela
+   210                         CF União Madeira
+   211                           Belenenses SAD
+   212                                GD Chaves
+   213                          Desportivo Aves
+   214                           CD Santa Clara
+   215                             FC Famalicão
+   216                               SC Farense
+   217                                FC Vizela
+   218                               AZ Alkmaar
+   219                       Twente Enschede FC
+   220                           Ajax Amsterdam
+   221                            PSV Eindhoven
+   222                            SC Heerenveen
+   223                             FC Groningen
+   224                      Feyenoord Rotterdam
+   225                                NAC Breda
+   226                               FC Utrecht
+   227                           Vitesse Arnhem
+   228                             NEC Nijmegen
+   229                        Willem II Tilburg
+   230                         Sparta Rotterdam
+   231                             ADO Den Haag
+   232                          Heracles Almelo
+   233                         Roda JC Kerkrade
+   234                                VVV-Venlo
+   235                             RKC Waalwijk
+   236                      Excelsior Rotterdam
+   237                 De Graafschap Doetinchem
+   238                               PEC Zwolle
+   239                    SC Cambuur-Leeuwarden
+   240                          Go Ahead Eagles
+   241                             FC Dordrecht
+   242                                 FC Emmen
+   243                          Fortuna Sittard
+   244                                 Molde FK
+   245                    Manchester United U18
+   246                            Altrincham FC
+   247                          Plymouth Argyle
+   248                        Wycombe Wanderers
+   249                                  Bury FC
+   250                             Ipswich Town
+   251                      Peterborough United
+   252                               AEK Athens
+   253                         Liverpool FC U18
+   254                             Swindon Town
+   255                          Tranmere Rovers
+   256                             FC Cartagena
+   257                            Bradford City
+   258                         Northampton Town
+   259                       Olympiacos Piraeus
+   260                     Panathinaikos Athens
+   261                                AO Kavala
+   262                   Darlington FC (- 2012)
+   263                              CSKA Moscow
+   264                               MFK Košice
+   265                           Chelsea FC U18
+   266                            Coventry City
+   267                          Southend United
+   268                           Arsenal FC U18
+   269                    UD Salamanca (- 2013)
+   270                          Oldham Athletic
+   271                         Lokomotiv Moscow
+   272                           Everton FC U18
+   273                      Everton FC Reserves
+   274                          Crewe Alexandra
+   275                            Motherwell FC
+   276                             Derby County
+   277                                  Retired
+   278                        Red Star Belgrade
+   279                     Aston Villa Reserves
+   280                          Aston Villa U18
+   281                            Leyton Orient
+   282                     Ilkeston Town (liq.)
+   283                             Lincoln City
+   284                            Lillestrøm SK
+   285                                Kalmar FF
+   286                Lamontville Golden Arrows
+   287                            Sutton United
+   288                            Fulham FC U18
+   289                                Celtic FC
+   290                        Aris Thessaloniki
+   291                          Al-Hilal Riyadh
+   292                              Barnsley FC
+   293             Germinal Beerschot Antwerpen
+   294                        Charlton Athletic
+   295                        Melbourne Victory
+   296                    Tottenham Hotspur U18
+   297                              Yeovil Town
+   298                           Torquay United
+   299                  Dagenham & Redbridge FC
+   300                              Millwall FC
+   301                          Cheltenham Town
+   302                        Nottingham Forest
+   303                              Exeter City
+   304                           Spartak Moscow
+   305                  Grasshopper Club Zurich
+   306                                Újpest FC
+   307                      West Ham United U18
+   308                        Scunthorpe United
+   309                         Shakhtar Donetsk
+   310                 Manchester City Reserves
+   311                         Galatasaray A.S.
+   312                             Notts County
+   313                          Chesterfield FC
+   314                   Hamilton Academical FC
+   315                               CD Olimpia
+   316                       Wigan Athletic U18
+   317                               Zamalek SC
+   318                            Club Nacional
+   319                           Stoke City U18
+   320                      Sheffield Wednesday
+   321                          Carlisle United
+   322                       Vauxhall Motors FC
+   323                                 FC Seoul
+   324              Wolverhampton Wanderers U18
+   325                     Bolton Wanderers U23
+   326                     Bolton Wanderers U18
+   327                         St. Johnstone FC
+   328                             Rochdale AFC
+   329                     Zenit St. Petersburg
+   330                             Career break
+   331                        Portsmouth FC U18
+   332                             Grimsby Town
+   333                         SV Zulte Waregem
+   334                               Luton Town
+   335                               Redhill FC
+   336                         HNK Hajduk Split
+   337                     Blackburn Rovers U18
+   338                Blackburn Rovers Reserves
+   339                       Accrington Stanley
+   340                         Rotherham United
+   341                    Chester City (- 2010)
+   342                       Milton Keynes Dons
+   343                           Audax Italiano
+   344                  Sunderland AFC Reserves
+   345                       Sunderland AFC U18
+   346                        Hartlepool United
+   347                             Hibernian FC
+   348                            Hull City U18
+   349                               Walsall FC
+   350                          Shrewsbury Town
+   351                             Rapid Vienna
+   352                         Doncaster Rovers
+   353                           Bristol Rovers
+   354                        Colchester United
+   355                        Preston North End
+   356                               Rangers FC
+   357                            Santos Laguna
+   358                Galway United FC (- 2011)
+   359                      Deportivo del Valle
+   360                      Birmingham City U18
+   361                            Burton Albion
+   362                 Hereford United (- 2014)
+   363                            GKS Belchatow
+   364               Manchester United Reserves
+   365                  Independiente del Valle
+   366                           Burnley FC U18
+   367                               Bröndby IF
+   368                               Falkirk FC
+   369                      Chelsea FC Reserves
+   370                            Dinamo Moscow
+   371                       Los Angeles Galaxy
+   372                         Turun Palloseura
+   373                         SK Slavia Prague
+   374                       FK Baumit Jablonec
+   375                                Santos FC
+   376                        IF Brommapojkarna
+   377                          Hapoel Tel Aviv
+   378                          Helsingborgs IF
+   379                  Suwon Samsung Bluewings
+   380                             Eastleigh FC
+   381                             Gateshead FC
+   382                                AE Larisa
+   383                     Szombathelyi Haladás
+   384                            RSC Charleroi
+   385                             Bristol City
+   386                    Cork City FC (- 2009)
+   387                               CSKA Sofia
+   388                        FK Mlada Boleslav
+   389                               Barrow AFC
+   390             Club Estudiantes de La Plata
+   391                       Wigan Athletic U23
+   392                    Deportivo Guadalajara
+   393                        Red Bull Salzburg
+   394                   Vancouver Whitecaps FC
+   395                       Víkingur Reykjavík
+   396                         Apollon Limassol
+   397                     Newcastle United U18
+   398                           Roma Primavera
+   399                         SK Sigma Olomouc
+   400                        NK Inter Zapresic
+   401                            Fenerbahce SK
+   402                           RSC Anderlecht
+   403                   Bohemian Football Club
+   404                   Airbus UK Broughton FC
+   405                                Barnet FC
+   406                             MSV Duisburg
+   407                               UNAM Pumas
+   408                           FC Midtjylland
+   409                           MVV Maastricht
+   410                     Real Madrid Castilla
+   411                               CF América
+   412                             Stevenage FC
+   413                              Rubin Kazan
+   414                        Sint-Truidense VV
+   415                                 Enppi SC
+   416                      Sporting Club Accra
+   417                      Manchester City U18
+   418                          Strømsgodset IF
+   419                              Aberdeen FC
+   420          Inverness Caledonian Thistle FC
+   421                             Morecambe FC
+   422                 Sport Club Internacional
+   423                        PAOK Thessaloniki
+   424                       Fulham FC Reserves
+   425                            Kilmarnock FC
+   426                              FC Volendam
+   427                           Kettering Town
+   428                         Stockport County
+   429                             Aalesunds FK
+   430                           MKE Ankaragücü
+   431                              IF Elfsborg
+   432                        Vålerenga Fotball
+   433                Newcastle United Reserves
+   434                                Dundee FC
+   435                           Standard Liège
+   436                         Nantwich Town FC
+   437                           Mansfield Town
+   438                 Fluminense Football Club
+   439                       Chukyo High School
+   440                           Austria Vienna
+   441                           Dulwich Hamlet
+   442                             Port Vale FC
+   443                                York City
+   444          Club Atlético Newell's Old Boys
+   445                           FC Barcelona B
+   446                        SuperSport United
+   447                         Basingstoke Town
+   448                     San Jose Earthquakes
+   449                     Iraklis Thessaloniki
+   450                              Wrexham AFC
+   451                              AEK Larnaca
+   452                         Norwich City U18
+   453              Tombense Futebol Clube (MG)
+   454                  Queens Park Rangers U18
+   455                             AC Lumezzane
+   456                          Boreham Wood FC
+   457                            Gillingham FC
+   458                           Aldershot Town
+   459                             Crawley Town
+   460               Hampton & Richmond Borough
+   461                              Besiktas JK
+   462            West Bromwich Albion Reserves
+   463                 West Bromwich Albion U18
+   464                                Bursaspor
+   465                              Trabzonspor
+   466                        FC Slovan Liberec
+   467                              Tigres UANL
+   468                                 KRC Genk
+   469                        Anzhi Makhachkala
+   470               SK Dynamo Ceske Budejovice
+   471                         Canvey Island FC
+   472                       Deportivo Saprissa
+   473                      Arsenal FC Reserves
+   474                  São Paulo Futebol Clube
+   475                     Macclesfield Town FC
+   476                          Chunnam Dragons
+   477                               Derry City
+   478                            AFC Wimbledon
+   479                                Al-Ain FC
+   480                              Kayserispor
+   481                     FK Partizan Belgrade
+   482                    Politehnica Timisoara
+   483                         Dundee United FC
+   484                    Dnipro Dnipropetrovsk
+   485                             Southport FC
+   486                       Juventus Primavera
+   487               Tottenham Hotspur Reserves
+   488                    Liverpool FC Reserves
+   489                      Club Atlético Tigre
+   490                   Heart of Midlothian FC
+   491                          Cliftonville FC
+   492                        Vaasan Palloseura
+   493                       Standard Liège U19
+   494                    Borussia Dortmund U19
+   495                       New York Red Bulls
+   496                              CD Alcoyano
+   497                            Alfreton Town
+   498                          Shamrock Rovers
+   499                              CE Sabadell
+   500                           Arsenal FC U21
+   501                         Swansea City U21
+   502                           Fleetwood Town
+   503                Club Universidad de Chile
+   504                    Manchester United U21
+   505                                 KAA Gent
+   506                              Dynamo Kyiv
+   507                            Fulham FC U21
+   508                       Ajax Amsterdam U21
+   509                              Dartford FC
+   510                             FC Eindhoven
+   511                       Melbourne Heart FC
+   512                     Newcastle United U21
+   513                            St. Mirren FC
+   514                          SD Ponferradina
+   515                          Aston Villa U21
+   516                             CD Cruz Azul
+   517                   Cruzeiro Esporte Clube
+   518                 Club Deportivo Maldonado
+   519                       Sunderland AFC U21
+   520                           Workington AFC
+   521                                Woking FC
+   522                           BSC Young Boys
+   523                       Southampton FC U18
+   524                               Toronto FC
+   525                                FK Rostov
+   526                         Liverpool FC U21
+   527                            FC Copenhagen
+   528                               Dundalk FC
+   529                           Rangers FC U20
+   530                     Sporting Kansas City
+   531                           Houston Dynamo
+   532                           Bray Wanderers
+   533                           Reading FC U18
+   534                           FC Reading U21
+   535               Shanghai Shenhua Liansheng
+   536                        IF Angered United
+   537                                FC Luzern
+   538                              Servette FC
+   539         Grêmio Foot-Ball Porto Alegrense
+   540                Clermont Foot Auvergne 63
+   541                         Waterford United
+   542                       Southampton FC U21
+   543                                 FC Tokyo
+   544                         Cambridge United
+   545                                FC Dallas
+   546                    Bishop's Stortford FC
+   547                  FC United of Manchester
+   548                          Staines Town FC
+   549                            Al-Gharafa SC
+   550                         Royal Antwerp FC
+   551                      Manchester City U21
+   552                                Aarhus GF
+   553                                 NK Zadar
+   554                             CD O'Higgins
+   555                    FK Vojvodina Novi Sad
+   556                           Real Murcia CF
+   557          Sport Club Corinthians Paulista
+   558                          Steaua Bukarest
+   559                    Tottenham Hotspur U21
+   560                      Seattle Sounders FC
+   561                 West Bromwich Albion U21
+   562                         Norwich City U21
+   563                       Wellington Phoenix
+   564                            Oxford United
+   565                            Frome Town FC
+   566                         FC Nordsjaelland
+   567                              Lech Poznan
+   568                               Aalborg BK
+   569                        Annan Athletic FC
+   570                             IFK Göteborg
+   571                            Eskisehirspor
+   572                         Cardiff City U18
+   573                           Ross County FC
+   574                             Llanelli AFC
+   575                           Newport County
+   576                            El Ahly Cairo
+   577                            Hull City U23
+   578                     Scarborough Athletic
+   579           Racing Club de France football
+   580                       Crystal Palace U23
+   581                       Crystal Palace U18
+   582                         Monarcas Morelia
+   583                Havant & Waterlooville FC
+   584                     CD Cruz Azul Hidalgo
+   585                       Sandefjord Fotball
+   586                            FC Basel 1893
+   587                           Chelsea FC U21
+   588                              FK Sarajevo
+   589                             Whitehawk FC
+   590                             Sligo Rovers
+   591                       Philadelphia Union
+   592                     Gainsborough Trinity
+   593                              Tamworth FC
+   594                        Harrow Borough FC
+   595                      Kayseri Erciyesspor
+   596                               Chester FC
+   597                           Welling United
+   598                          Ferencvárosi TC
+   599                           Everton FC U21
+   600                       AFC Telford United
+   601                             Cork City FC
+   602                    Folkestone Invicta FC
+   603                        Alloa Athletic FC
+   604                           Harrogate Town
+   605                       Leicester City U18
+   606                            Diósgyőri VTK
+   607                            Nuneaton Town
+   608                              Racing Club
+   609                         New York City FC
+   610                        GNK Dinamo Zagreb
+   611                  Queens Park Rangers U23
+   612                          Concord Rangers
+   613                        Al-Ittihad Jeddah
+   614                      Atlético Paranaense
+   615                           Stoke City U21
+   616                            Boston United
+   617                            Östersunds FK
+   618                     Lekhwiya Sports Club
+   619                              Al-Arabi SC
+   620                             FC Bari 1908
+   621                             Rosenborg BK
+   622                 Metalist Kharkiv (-2016)
+   623                               CF Pachuca
+   624            Club Atlético Vélez Sarsfield
+   625                      West Ham United U21
+   626                           Legia Warszawa
+   627                            Barton Rovers
+   628                        Burgess Hill Town
+   629                               HNK Rijeka
+   630                       Al-Ahli Dubai Club
+   631                         Galway United FC
+   632               Club Atlético Boca Juniors
+   633                          Orlando City SC
+   634     Club Atlético San Lorenzo de Almagro
+   635                          Chelmsford City
+   636                                Kasimpasa
+   637              Guangzhou Evergrande Taobao
+   638                         Imperial Academy
+   639                            FSV Frankfurt
+   640                               Bromley FC
+   641                Club Atlético River Plate
+   642          Atletico River Plate Montevideo
+   643                    Al-Jazira (Abu Dhabi)
+   644                            Al-Nassr Riad
+   645                       Leicester City U21
+   646                           Solihull Moors
+   647             Club Atlético River Plate II
+   648                      AFC Bournemouth U18
+   649                      AFC Bournemouth U21
+   650                           Club Brugge KV
+   651                           Virtus Entella
+   652                          Caykur Rizespor
+   653                           Jiangsu Suning
+   654                   Central Coast Mariners
+   655                        Melbourne City FC
+   656                               Margate FC
+   657                            Beijing Renhe
+   658                      FK Zalgiris Vilnius
+   659             FK Atlantas Klaipeda (–2020)
+   660                         Longford Town FC
+   661                            Dalian Yifang
+   662                        Atlético Nacional
+   663                           Djurgardens IF
+   664                                 Cracovia
+   665                       Leicester City U23
+   666                      Sanfrecce Hiroshima
+   667                    Tottenham Hotspur U23
+   668                                   FK Ufa
+   669                   Gimnàstic de Tarragona
+   670                      Manchester City U23
+   671                       Southampton FC U23
+   672                  Shandong Luneng Taishan
+   673                                  FC Sion
+   674                               AC Horsens
+   675                           Chelsea FC U23
+   676                     Royal Excel Mouscron
+   677                               Alanyaspor
+   678                           Everton FC U23
+   679                         Waasland-Beveren
+   680                 West Bromwich Albion U23
+   681                              AC Le Havre
+   682                           Braintree Town
+   683                    Genclerbirligi Ankara
+   684                    Manchester United U23
+   685                       Sunderland AFC U23
+   686                           Burnley FC U23
+   687                             Salford City
+   688                         Stafford Rangers
+   689                          Hednesford Town
+   690            Sociedade Esportiva Palmeiras
+   691                       Atlético Venezuela
+   692                            Shanghai SIPG
+   693                       Recreativo Granada
+   694                        Deportivo Pereira
+   695                          Changchun Yatai
+   696                       CD América de Cali
+   697                            Huachipato FC
+   698                         Viking Stavanger
+   699                              Limerick FC
+   700                               Brocton FC
+   701                              Real Oviedo
+   702                          Levadia Tallinn
+   703            Club de Regatas Vasco da Gama
+   704                              Antalyaspor
+   705                      Al-Wasl Sports Club
+   706                           Arsenal FC U23
+   707                               CA Peñarol
+   708                                KAS Eupen
+   709                       Partick Thistle FC
+   710                             Halmstads BK
+   711                      West Ham United U23
+   712                           Stoke City U23
+   713                            Leamington FC
+   714                         Swansea City U23
+   715                                Leones FC
+   716                        Real Valladolid B
+   717                         Guizhou Hengfeng
+   718                                CS Emelec
+   719                          Al-Nasr (Dubai)
+   720                      DAC Dunajska Streda
+   721                        FC Viktoria Plzen
+   722                            FK Bodø/Glimt
+   723                           Almere City FC
+   724                    Huddersfield Town U18
+   725                         CF Os Belenenses
+   726             Clube de Regatas do Flamengo
+   727                             PAS Giannina
+   728                    Universitatea Craiova
+   729                           Zaglebie Lubin
+   730                   Independiente Medellín
+   731                         AC Sparta Prague
+   732                                Sivasspor
+   733                         Liverpool FC U23
+   734                   Clube Atlético Mineiro
+   735                           Dover Athletic
+   736                      Oud-Heverlee Leuven
+   737                         Maidstone United
+   738                     Mamelodi Sundowns FC
+   739                               Esbjerg fB
+   740               Brighton & Hove Albion U23
+   741                           Extremadura UD
+   742              Royale Union Saint Gilloise
+   743                               SC Telstar
+   744                          Colorado Rapids
+   745                           Pogon Szczecin
+   746                      FC Jumilla (- 2019)
+   747                         FC Hansa Rostock
+   748                            Livingston FC
+   749                        Kawasaki Frontale
+   750                                Sydney FC
+   751                              KV Kortrijk
+   752                            Guangzhou R&F
+   753                            RWD Molenbeek
+   754                        Atlanta United FC
+   755                     Newcastle United U23
+   756                      FC Sheriff Tiraspol
+   757                         Disqualification
+   758                           IFK Norrköping
+   759                              FK Vozdovac
+   760                  CD Universidad Católica
+   761                            KF Skënderbeu
+   762                        Atlas Guadalajara
+   763   Asociación Atlética Argentinos Juniors
+   764                               NK Maribor
+   765                    FC Viitorul Constanta
+   766                       Würzburger Kickers
+   767            UD San Sebastián de los Reyes
+   768                         Yeni Malatyaspor
+   769                         Columbus Crew SC
+   770                              Gamba Osaka
+   771                              KV Oostende
+   772                          MOL Fehérvár FC
+   773                             CF Monterrey
+   774                Ituano Futebol Clube (SP)
+   775                          Orion Tip Sered
+   776                                 UD Ibiza
+   777                             1.FK Pribram
+   778                        Rakow Czestochowa
+   779                           Cosenza Calcio
+   780                               Qarabağ FK
+   781                              Hellerup IK
+   782                            Brisbane Roar
+   783                   Barcelona SC Guayaquil
+   784                         Norwich City U23
+   785                            Wealdstone FC
+   786                     Sheffield United U23
+   787                          Aston Villa U23
+   788                         Derby County U23
+   789                    Jagiellonia Bialystok
+   790               Shanghai Greenland Shenhua
+   791              Wolverhampton Wanderers U23
+   792                              Envigado FC
+   793                            FC Cincinnati
+   794                                LDU Quito
+   795                        FC Lausanne-Sport
+   796                            Shanghai Port
+   797                               Kórdrengir
+   798                             FK Cukaricki
+   799                 Olympique de Marseille B
+   800                              UD Logroñés
+   801                   Club Atlético Talleres
+   802                              KV Mechelen
+   803                                Lommel SK
+   804                      Deportivo Municipal
+   805                          Sarpsborg 08 FF
+   806                           Beerschot V.A.
+   807                         Southampton FC B
+   808       Grêmio Foot-Ball Porto Alegrense B
+   809                         Shanghai Shenhua
+   810                             Silkeborg IF
+   811                           Brentford FC B
+   812                   New England Revolution
+   813                             Al-Rayyan SC
+   814             Sharjah Cultural Sports Club
+   815                         Leeds United U23
+   816                          Adana Demirspor
+   817                            Karlsruher SC
+   818                               FC Porto B
+   819                             Al-Duhail SC
+   820                             Degerfors IF
+   821                               CSKA-Sofia
+   822                             CD Castellón
+   823                    Racing de Santander B
+   824                    Club Sporting Cristal
+   825                            Getafe CF U19
+   826                                  CD Rota
+   827                              CD Numancia
+   828                      Chornomorets Odessa
+   829                      Sporting de Gijón B
+   830                               UD Melilla
+   831                       Atlético Malagueño
+   832                        Recreativo Huelva
+   833                          Villarreal CF B
+   834                        Valencia Mestalla
+   835                           RC Deportivo B
+   836                          CA Tiro Federal
+   837          Associação Atlética Iguaçu (PR)
+   838                           RCD Espanyol B
+   839                    Panthrakikos Komotini
+   840                         Panionios Athens
+   841            Botafogo de Futebol e Regatas
+   842                            CD Tenerife B
+   843                UD Fuerteventura (- 2010)
+   844                           RCD Mallorca B
+   845                   Defensor Sporting Club
+   846                     Atlético de Madrid B
+   847                        Albacete Balompié
+   848                          Bilbao Athletic
+   849                             Ontinyent CF
+   850                             Real Jaén CF
+   851                      Club Atlético Lanús
+   852                      CA Osasuna Promesas
+   853                                FC Zürich
+   854                  Liverpool FC Montevideo
+   855       Associação Maga Esporte Clube (SC)
+   856                         Sevilla Atlético
+   857                               CF Atlante
+   858              Club Atlético Independiente
+   859                           Atlético Ceuta
+   860                 Liberty Professionals FC
+   861     Adap Galo Maringá Football Club (PR)
+   862              Desportivo Brasil Ltda (SP)
+   863                            Málaga CF U19
+   864                                      AIK
+   865                           APO Levadiakos
+   866                      Yokohama F. Marinos
+   867                                Puebla FC
+   868          Club Atlético Chacarita Juniors
+   869                      FC Dinamo Bucharest
+   870                            Hércules CF B
+   871                           Villajoyosa CF
+   872                           Reggina Calcio
+   873                          Real Unión Club
+   874                               Danubio FC
+   875                             UD Almería B
+   876                   Club Atlético Banfield
+   877                  Indios de Ciudad Juárez
+   878                               Al-Sadd SC
+   879  Club Deportivo Godoy Cruz Antonio Tomba
+   880                                FC Vaslui
+   881                          Real Sociedad B
+   882                             UD Lanzarote
+   883                           Millonarios FC
+   884                            Pontevedra CF
+   885                             MTK Budapest
+   886                          Boyacá Chicó FC
+   887                          Real Zaragoza B
+   888                      Athletic Bilbao U19
+   889                      Real Oviedo Vetusta
+   890                          CD Badajoz 1905
+   891                Universitario de Deportes
+   892                       SD Lemona (- 2012)
+   893                     Racing Santander U19
+   894                           CD Guadalajara
+   895                      Club Atlético Cerro
+   896                              CD Guijuelo
+   897                              UD Maracena
+   898                            Montañeros CF
+   899                                Zamora CF
+   900                            Maccabi Haifa
+   901                          Milan Primavera
+   902                              Getafe CF B
+   903                      Neuchâtel Xamax FCS
+   904                      Arsenal Fútbol Club
+   905                 FC Istres Ouest Provence
+   906                   Espanyol Barcelona U19
+   907                         Rayo Vallecano B
+   908                         Asteras Tripolis
+   909                               Le Mans FC
+   910         Istanbul Büyüksehir Belediyespor
+   911                Figueirense Futebol Clube
+   912                           Club Cienciano
+   913                     Karpaty Lviv (-2021)
+   914                     Caravaca CF (- 2012)
+   915                            Guizhou Renhe
+   916                            Ulsan Hyundai
+   917                  Coritiba Foot Ball Club
+   918                                 FC Aarau
+   919                              CD Mirandés
+   920                           UCAM Murcia CF
+   921                                  CD Lugo
+   922                             SL Benfica B
+   923                              AD Alcorcón
+   924                             Levante UD B
+   925                             Celta Vigo B
+   926      Club de Gimnasia y Esgrima La Plata
+   927                   Club Libertad Asunción
+   928                  Kuban Krasnodar (-2018)
+   929                             Esteghlal FC
+   930                             Real Betis B
+   931                          San Fernando CD
+   932                            CSD Colo Colo
+   933                              Videoton FC
+   934                       Johor Darul Ta'zim
+   935                             Beerschot AC
+   936                      CD Ourense (- 2014)
+   937        União São João Esporte Clube (SP)
+   938                          Doxa Katokopias
+   939                        Celta de Vigo U19
+   940                       Ludogorets Razgrad
+   941                         Beitar Jerusalem
+   942                    Esporte Clube Vitória
+   943                                RAEC Mons
+   944                         Wydad Casablanca
+   945                         San Francisco FC
+   946                              Widzew Lodz
+   947                         Rangers de Talca
+   948                          CD Plaza Amador
+   949                      Club Atlético Colón
+   950                          Montreal Impact
+   951                                 CA Fénix
+   952                             Levski Sofia
+   953                               Chiapas FC
+   954                      Atlético de Rafaela
+   955                              Once Caldas
+   956                           Deportivo Cali
+   957                           Unión Española
+   958                 Clube Náutico Capibaribe
+   959                          CE L’Hospitalet
+   960                          Elche Ilicitano
+   961                             Club Tijuana
+   962                          TSV 1860 Munich
+   963                         La Hoya Lorca CF
+   964                             Barakaldo CF
+   965                       Sassuolo Primavera
+   966                              GD Ribeirão
+   967                   Istanbul Basaksehir FK
+   968                             Sestao River
+   969                    SCG Muangthong United
+   970                              Arenas Club
+   971                            SD Amorebieta
+   972                            CD Lagun Onak
+   973                 CD La Equidad Seguros SA
+   974                        Udinese Primavera
+   975                                CSMS Iași
+   976                      Atlético Levante UD
+   977                    Jiangsu Guoxin Sainty
+   978                    Quilmes Atlético Club
+   979                             Córdoba CF B
+   980                            UE Llagostera
+   981                                PAE Veria
+   982                              OFK Beograd
+   983                               FC Baniyas
+   984                 Real Balompédica Linense
+   985                            Beijing Guoan
+   986                        CD Atlético Huila
+   987                            Sporting CP B
+   988                            Lechia Gdansk
+   989                            Gaziantepspor
+   990                              El Gouna FC
+   991                            SV Sandhausen
+   992                     Sport Club do Recife
+   993                      Hebei China Fortune
+   994                               CD Vitoria
+   995                                Burgos CF
+   996                    Club Atlético Huracán
+   997                      CF Rayo Majadahonda
+   998                             CD Palestino
+   999                           Deportivo Lara
+  1000                         Maccabi Tel Aviv
+  1001                     Instituto AC Córdoba
+  1002                              CD Tudelano
+  1003                                 FC Koper
+  1004                         Tianjin Quanjian
+  1005            Club Atlético Rosario Central
+  1006                             Cerezo Osaka
+  1007                       Deportivo Alavés B
+  1008                              Club Olimpo
+  1009                     KSC Lokeren (- 2020)
+  1010                 CF Reus Deportiu (-2020)
+  1011                             FK Krasnodar
+  1012                                 NK Rudes
+  1013                                 Lorca FC
+  1014                         Cultural Leonesa
+  1015                      Las Palmas Atlético
+  1016                 Betis Deportivo Balompié
+  1017                              Carabobo FC
+  1018                              Girona FC B
+  1019                                  CF Gavà
+  1020                               Al-Ahli SC
+  1021               Club Atlético Boston River
+  1022                           Los Angeles FC
+  1023                    Club Rápido de Bouzas
+  1024                             Chicago Fire
+  1025                    Tianjin Teda Reserves
+  1026                             Club León FC
+  1027                               MSK Zilina
+  1028                       FK Palanga (-2020)
+  1029                           Nagoya Grampus
+  1030                              CF Peralada
+  1031                             Henan Jianye
+  1032 Asociación Atlética Argentinos Juniors U20
+  1033                             CD Leganés B
+  1034                         Salamanca CF UDS
+  1035                                FC Astana
+  1036                           CF Fuenlabrada
+  1037                            Zorya Lugansk
+  1038                           Osmanlispor FK
+  1039                                Varzim SC
+  1040                                CD Teruel
+  1041                                CD Toledo
+  1042                      RC Deportivo Fabril
+  1043                         Al-Shabab Riyadh
+  1044                           Watford FC U23
+  1045                                 Al-Fateh
+  1046                                FC Lugano
+  1047                               Wuhan Zall
+  1048                           Al-Ahli Jeddah
+  1049                                  Göztepe
+  1050                           AFC Eskilstuna
+  1051                Club Athletico Paranaense
+  1052                     Atlético de San Luis
+  1053                      Dalian Professional
+  1054                                NK Osijek
+  1055                     Deportivo Alavés U19
+  1056                            NK Istra 1961
+  1057                             Gaziantep FK
+  1058                       FC St. Gallen 1879
+  1059                          Lleida Esportiu
+  1060                               CD Badajoz
+  1061                      FK Radnik Surdulica
+  1062                              Marbella FC
+  1063                             Las Rozas CF
+  1064                     NK Lokomotiva Zagreb
+  1065                          FC Villarreal C
+  1066                           Al-Wahda Mekka
+  1067                           Wolfsberger AC
+  1068                            APOEL Nicosia
+  1069                               Cádiz CF B
+  1070                          FC Hermannstadt
+  1071                           Bolívar La Paz
+  1072                                  SD Ejea
+  1073                            Racing Ferrol
+  1074                       Defensa y Justicia
+  1075                         FC Barcelona U19
+  1076                                FC Juárez
+  1077                         Fatih Karagümrük
+  1078                       Club Cerro Porteño
+  1079                       FK Sutjeska Niksic
+  1080                           Dinamo Tbilisi
+  1081                        Slovan Bratislava
+  1082                               Legnano AC
+  1083                           US Grosseto FC
+  1084                         Treviso FBC 1993
+  1085                                Rimini FC
+  1086                    Inter Milan Primavera
+  1087                              Piacenza FC
+  1088                                Modena FC
+  1089               Calcio Portogruaro-Summaga
+  1090                            UD Fuengirola
+  1091                           Vicenza Calcio
+  1092                                US Foggia
+  1093                             US Triestina
+  1094                                AC Ancona
+  1095                          SS Villacidrese
+  1096                         AC Monza Brianza
+  1097                      Cosenza Calcio 1914
+  1098                  ASD Rondinella Marzocco
+  1099                                 FC Rieti
+  1100                           Pomezia Calcio
+  1101                        ASD Morolo Calcio
+  1102                                  Unknown
+  1103                            AC Isola Liri
+  1104                       SF Aversa Normanna
+  1105                       ASD Sanluri Calcio
+  1106                               San Marino
+  1107                              Varese 1910
+  1108                            Calcio Padova
+  1109                           Ravenna Calcio
+  1110                                SC Spezia
+  1111                           Foligno Calcio
+  1112                     FC Esperia Viareggio
+  1113                       Ascoli Calcio 1898
+  1114                        AS Calcio Figline
+  1115                  Salernitana Calcio 1919
+  1116                   FC Südtirol-Alto Adige
+  1117                         Palermo Juniores
+  1118                        Giulianova Calcio
+  1119                              AC Monopoli
+  1120                            AS Cittadella
+  1121                        Celano FC Olimpia
+  1122                            AC Bellinzona
+  1123                    Scafatese Calcio 1922
+  1124                        Calcio Lecco 1912
+  1125                            VF Colligiana
+  1126            AS Pescina Valle del Giovenco
+  1127                              FC Canavese
+  1128                                AC Arezzo
+  1129                           Ternana Calcio
+  1130                           AC Carpenedolo
+  1131                       FBC Unione Venezia
+  1132                        Pescara Primavera
+  1133                          AC Mantova 1911
+  1134                          Parma Primavera
+  1135                      Santegidiese Calcio
+  1136                          US Pro Vercelli
+  1137                           AC Sangiustese
+  1138               US Alessandria Calcio 1912
+  1139                       Sansepolcro Calcio
+  1140                          Crociati Noceto
+  1141                  AC Bellaria Igea Marina
+  1142                           Perugia Calcio
+  1143                       US Pergocrema 1932
+  1144                             US Cremonese
+  1145                           UC AlbinoLeffe
+  1146                          Genoa Primavera
+  1147                Clube Operário Desportivo
+  1148                           AS Gubbio 1910
+  1149                               Savona FBC
+  1150                       AC Sporting Cecina
+  1151                         AC Reggiana 1919
+  1152                        Sapri Calcio 1928
+  1153                   ASD Manfredonia Calcio
+  1154                            AS Andria BAT
+  1155                          Taranto FC 1927
+  1156                        Noicattaro Calcio
+  1157                    SSD Città di Brindisi
+  1158                     Paganese Calcio 1926
+  1159                                Igea 1946
+  1160                     Fiorentina Primavera
+  1161                         Gallipoli Calcio
+  1162                             AC Pisa 1909
+  1163                     AS Lucchese Libertas
+  1164              Tiburones Rojos de Veracruz
+  1165                       Atalanta Primavera
+  1166                             AC Pro Sesto
+  1167                         AC Sambonifacese
+  1168                           US Caravaggese
+  1169                                Lazio U19
+  1170                             ASG Nocerina
+  1171                              Cavese 1919
+  1172                 Slaven Belupo Koprivnica
+  1173                      Avellino Calcio SSD
+  1174                           Siena Juniores
+  1175                       SS Virtus Lanciano
+  1176                       Sangiovannese 1927
+  1177                                FC Moscow
+  1178                      Cassino Calcio 1924
+  1179                       Potenza Sport Club
+  1180                            FC Pavia 1911
+  1181                             Catanzaro FC
+  1182                                SPAL 1907
+  1183                               Cisco Roma
+  1184                  Gsd Nuova Tor Tre Teste
+  1185                         Treviso Juniores
+  1186                         Chievo Primavera
+  1187                        Aurora Pro Patria
+  1188                            AC Giacomense
+  1189              Grasshopper Club Zürich U21
+  1190                  CD Puertollano (- 2015)
+  1191                   Llaneros de Guanare EF
+  1192                         AC Arles-Avignon
+  1193                        Unirea Alba Iulia
+  1194                             Alghero 1945
+  1195                       Cagliari Primavera
+  1196                        Bologna Primavera
+  1197                    Carrarese Calcio 1908
+  1198                      FC Mendrisio-Stabio
+  1199                        Livorno Primavera
+  1200                          Sorrento Calcio
+  1201                        Catania Primavera
+  1202                           Fredrikstad FK
+  1203                         Napoli Primavera
+  1204                                 CFR Cluj
+  1205                                  FC Thun
+  1206                             GC Biaschesi
+  1207                               FC Locarno
+  1208                              Calcio Como
+  1209                                 AC Prato
+  1210                             Olbia Calcio
+  1211                     The Strongest La Paz
+  1212                            Turris Calcio
+  1213                                 Nissa FC
+  1214                             FC Pro Vasto
+  1215                         Free State Stars
+  1216                          Berekum Arsenal
+  1217                  Büyüksehir Belediyespor
+  1218                           Diagoras Rodou
+  1219                         Selargius Calcio
+  1220                            SK Sturm Graz
+  1221                            Piast Gliwice
+  1222                       SS Barletta Calcio
+  1223                     ASD Liberty Monopoli
+  1224                           SS Juve Stabia
+  1225                            Atletico Roma
+  1226                                FC Matera
+  1227                     AC Rinascita Messina
+  1228          Monte Alegre Futebol Clube (SP)
+  1229                               SS Milazzo
+  1230                  ASD HinterReggio Calcio
+  1231                               Manisaspor
+  1232                          Atromitos Athen
+  1233                         Valenzana Calcio
+  1234                           AC Mezzocorona
+  1235                 Unione Sportiva Siracusa
+  1236                      Sampdoria Primavera
+  1237                          SC Ligorna 1922
+  1238                            FC Fondi 1922
+  1239                         Unión San Felipe
+  1240                                 Malmö FF
+  1241                           LB Châteauroux
+  1242                           AC Montichiari
+  1243                 Mixto Esporte Clube (MT)
+  1244                     Bassano Virtus 55 ST
+  1245                                Lyngby BK
+  1246                              Terrassa FC
+  1247                            US Poggibonsi
+  1248                          L'Aquila Calcio
+  1249                            SSD US Ancona
+  1250                                AC Renate
+  1251                            Città di Gela
+  1252                              Prato Youth
+  1253                         FC Banik Ostrava
+  1254                          Sacilese Calcio
+  1255                                SC Kriens
+  1256                           Bari Primavera
+  1257                             US Gavorrano
+  1258     Polisportiva Nuova Campobasso Calcio
+  1259                           Pavia Juniores
+  1260                         Aviron Bayonnais
+  1261                           Unione Sanremo
+  1262                               FC Chiasso
+  1263                  Alma Juventus Fano 1906
+  1264                           Colorno Calcio
+  1265                        Brescia Primavera
+  1266                   Solbiatese Arno Calcio
+  1267                              Feralpisalò
+  1268                                   FK Rad
+  1269                            Debreceni VSC
+  1270                                NK Zagreb
+  1271                             Wisla Kraków
+  1272                                ND Gorica
+  1273                 Chernomorets 1919 Burgas
+  1274                         US Latina Calcio
+  1275                         Ethnikos Piraeus
+  1276                             Paraná Clube
+  1277                     FC Pro Vercelli 1892
+  1278                              Hammarby IF
+  1279                                 SK Brann
+  1280                           Spartak Trnava
+  1281                    Estudiantes de Mérida
+  1282                         AS Avellino 1912
+  1283                         AS Casale Calcio
+  1284                             ASDC Gozzano
+  1285                             US Catanzaro
+  1286                           RD Internapoli
+  1287                                 Qatar SC
+  1288                               CS Mioveni
+  1289                         Cesena Primavera
+  1290                     Santarcangelo Calcio
+  1291                       Valenzana Mado SSD
+  1292                             CA Rentistas
+  1293                              Mjällby AIF
+  1294                           Cagliari Youth
+  1295                 US Borgo a Buggiano 1920
+  1296                              ASD Martina
+  1297                   US Sambenedettese 1923
+  1298                             Arsenal Kyiv
+  1299                              FC Lustenau
+  1300                           Salerno Calcio
+  1301                          Lecce Primavera
+  1302                         Club Juan Aurich
+  1303                          Valle Grecanica
+  1304                        SSD Chieti Calcio
+  1305                             Casertana FC
+  1306                              FC Tiraspol
+  1307                                Karsiyaka
+  1308                            AC Cuneo 1905
+  1309                      Lokomotiv Moscow II
+  1310                     Montevideo Wanderers
+  1311                        Petrolul Ploiesti
+  1312                                FC Snagov
+  1313                        Celano FC Marsica
+  1314                         Deportivo Cuenca
+  1315                           Red Star FC 93
+  1316                            Acqui US 1911
+  1317                     Vigor Lamezia Calcio
+  1318        Nacional Esporte Clube Ltda. (MG)
+  1319               Royal Boussu Dour Borinage
+  1320                               FC Brüssel
+  1321                   AFC Chindia Targoviste
+  1322                             FC Dinamo II
+  1323                        Pierantonio Sport
+  1324                           Omonia Nicosia
+  1325                    Ebolitana Calcio 1925
+  1326                         JEF United Chiba
+  1327                              Hönefoss BK
+  1328                  Uberaba Sport Club (MG)
+  1329                                 Qormi FC
+  1330                                  CS Visé
+  1331                          Arzanese Calcio
+  1332                               FC Aprilia
+  1333                  FK Javor-Matis Ivanjica
+  1334                                CF Braila
+  1335                   Club Atlético Belgrano
+  1336                     Valle d'Aosta Calcio
+  1337                        AC Perugia Calcio
+  1338               Cruzeiro Esporte Clube U20
+  1339                       ACS Poli Timisoara
+  1340                         SS Teramo Calcio
+  1341                      Tritium Calcio 1908
+  1342                               CS Otopeni
+  1343                       Mineros de Guayana
+  1344                     Club Almirante Brown
+  1345                      ASD Acireale Calcio
+  1346                             Fujieda MYFC
+  1347             Sport Club Internacional U20
+  1348                    FK Suduva Marijampole
+  1349                                 Zulia FC
+  1350                        Vicenza Primavera
+  1351                          Gubbio Berretti
+  1352                          Losone Sportiva
+  1353                          Casarano Calcio
+  1354                               AC Mantova
+  1355                         Spezia Primavera
+  1356                             Fondi Calcio
+  1357                               Unirea Dej
+  1358                            Lupa Piacenza
+  1359                     FK Proleter Novi Sad
+  1360                           FC Castiglione
+  1361                                 AS Melfi
+  1362                            Foggia Calcio
+  1363                               Ismaily SC
+  1364                         Sliema Wanderers
+  1365                          Rapid Bucharest
+  1366                         NK Triglav Kranj
+  1367                             Botev Vratsa
+  1368                            Astra Giurgiu
+  1369                        SC Vallée d’Aoste
+  1370                            GAIS Göteborg
+  1371                           CSKA Moscow II
+  1372                             Mogren Budva
+  1373                         Torino Primavera
+  1374                       Budapest Honvéd FC
+  1375                         CS Flacara Faget
+  1376           Brown Bears (Brown University)
+  1377                                 Orduspor
+  1378                              FC Wil 1900
+  1379                          Atletico Arezzo
+  1380                     Kaposvári Rákóczi FC
+  1381                  UTA Bătrâna Doamnă Arad
+  1382                             SC Kriens II
+  1383                          Odense Boldklub
+  1384                    US Città di Pontedera
+  1385                      1913 Seregno Calcio
+  1386                        AS Martina Franca
+  1387                     Renato Curi Angolana
+  1388                       Lierse SK (- 2018)
+  1389                         Empoli Primavera
+  1390                                   AC Bra
+  1391                        Zaglebie Lubin II
+  1392                    Dukla Banska Bystrica
+  1393                       FC Sambiase Calcio
+  1394                            NFC Orlandina
+  1395                         AS Castel Rigone
+  1396                               HNK Gorica
+  1397                      AS Sestese Juniores
+  1398                     Polisportiva Tirreno
+  1399                          Real Vicenza VS
+  1400                     Nuova Cosenza Calcio
+  1401                     GSD RapalloBogliasco
+  1402                                  FC Vado
+  1403                           Trapani Calcio
+  1404                             Chorrillo FC
+  1405                  USD Virtusvecomp Verona
+  1406                         Deportes Quindío
+  1407                                RNK Split
+  1408                          Inter Allies FC
+  1409                            ASD Sanvitese
+  1410                           FC Biel-Bienne
+  1411                         US Palermo Youth
+  1412                    ACD Trissino Valdagno
+  1413                          Genoa CFC Youth
+  1414                    Red Star Belgrade U19
+  1415                                FUS Rabat
+  1416                      Vigor Lamezia Youth
+  1417                         Foligno Juniores
+  1418                         SSD Imperia 1923
+  1419                           Parma FC Youth
+  1420                            APS Zakynthos
+  1421             Victorian Institute of Sport
+  1422                     ASD Valtarese Calcio
+  1423                             OFI Crete FC
+  1424                        Brönshöj Boldklub
+  1425                          SEF Torres 1903
+  1426                                 Mosta FC
+  1427                           Mariano Keller
+  1428                            Górnik Zabrze
+  1429                         RWDM Brussels FC
+  1430                        PSV Eindhoven U21
+  1431                     Guangzhou Evergrande
+  1432                 Montevideo Wanderers U19
+  1433                      Thermal Abano Teolo
+  1434              Clube Atlético Paranaense B
+  1435                               USD Novese
+  1436                  ACD Grifoponte Torgiano
+  1437                  San Donato - Tavarnelle
+  1438                           Don Bosco Moca
+  1439                   Correggese Calcio 1948
+  1440                                 CD Barco
+  1441                     US Pergolettese 1932
+  1442                      Jönköpings Södra IF
+  1443                           SK Vysoké Mýto
+  1444                     USD San Marco Avenza
+  1445                    GS Consolat Marseille
+  1446                          Lokomotiv Sofia
+  1447                    UR La Louvière Centre
+  1448                                 KF Teuta
+  1449                            Slask Wroclaw
+  1450        Associação Chapecoense de Futebol
+  1451                        ASD Chieri Calcio
+  1452                     AC Delta Porto Tolle
+  1453                  USD Sestri Levante 1919
+  1454                       USD Scanzorosciate
+  1455                 SSD Piacenza Calcio 1919
+  1456                             USD Ciserano
+  1457                             Lupa Roma FC
+  1458                                  NK Krka
+  1459         Clube de Regatas do Flamengo U20
+  1460                            AC Tuttocuoio
+  1461                                 Forlì FC
+  1462                             SP Tre Fiori
+  1463                     Biancoscudati Padova
+  1464                              KF Vllaznia
+  1465                       RSC Anderlecht U21
+  1466                         NK Istra 1961 II
+  1467                        Lentigione Calcio
+  1468                           SSD Monza 1912
+  1469                    Newcastle United Jets
+  1470                        CS Scandicci 1908
+  1471                           Genoa Under 17
+  1472                  Calcio Del Duca Ribelle
+  1473                        US Pistoiese 1921
+  1474           Clube Atlético Bragantino (SP)
+  1475                  Hellas Verona Primavera
+  1476                              Floriana FC
+  1477                    FK Donji Srem Pecinci
+  1478                        Pro Piacenza 1919
+  1479                         AS Pizzighettone
+  1480                                Konyaspor
+  1481                             FC Den Bosch
+  1482                  Juventud de Las Piedras
+  1483                 Western Sydney Wanderers
+  1484                           AC Milan Youth
+  1485                              ACR Messina
+  1486                             GS Ergotelis
+  1487                   CD San Marcos de Arica
+  1488                           AC Savoia 1908
+  1489                         Latina Primavera
+  1490                        NK Istra 1961 U19
+  1491                           Ascoli Picchio
+  1492                         SS Matera Calcio
+  1493                             FC Pune City
+  1494                            FC Brügge U21
+  1495                   Lornano Badesse Calcio
+  1496                         ASD Nocera Umbra
+  1497                  SSD Città di Campobasso
+  1498                         Fabriano Cerreto
+  1499                Vallicisa 2000 Gs Succisa
+  1500                    Salernitana Primavera
+  1501                                Mqabba FC
+  1502                                US Ancona
+  1503                            Casalgrandese
+  1504                             AC Formigine
+  1505               Club General Díaz de Luque
+  1506                         Pordenone Calcio
+  1507                           Aurora Seriate
+  1508                            SS Pennarossa
+  1509                             Litex Lovech
+  1510                               A.C. Garda
+  1511                         Cardiff City U23
+  1512                             KVC Westerlo
+  1513                                US Arezzo
+  1514                    NK Olimpija Ljubljana
+  1515                            Spyris Kaunas
+  1516                         Gaz Metan Medias
+  1517                   Jedinstvo Bijelo Polje
+  1518                   Sporting Club Trestina
+  1519                   AS Gualdo Casacastalda
+  1520                           Club Petrolero
+  1521                        Mouscron-Péruwelz
+  1522                      Imolese Calcio 1919
+  1523                            Bytovia Bytow
+  1524                            Cercle Brugge
+  1525                          AC Delta Rovigo
+  1526                         SS Monopoli 1966
+  1527                 ASD Lupa Castelli Romani
+  1528                           Buriram United
+  1529                         US Avellino 1912
+  1530                        SSD Ischia Calcio
+  1531                            SS Maceratese
+  1532                               FBC Casale
+  1533                           SL Benfica U17
+  1534                         ASD Bustese 1963
+  1535                     Club Real Santa Cruz
+  1536                              Atlético CP
+  1537                 FC Bohemians Prague 1905
+  1538                                FK Senica
+  1539                              Pinerolo FC
+  1540                 ASD Villafranca Veronese
+  1541                                  Fenegrò
+  1542                 Gsd Castelfidardo Calcio
+  1543                           Fidelis Andria
+  1544                           ASD Pro Eureka
+  1545                                DNŠ Zavrč
+  1546                            Sanliurfaspor
+  1547                         ASD Akragas 2018
+  1548                                   US Dro
+  1549                                  ASD DAK
+  1550                           Siena Berretti
+  1551                             FK Partizani
+  1552                US Castelnuovo Garfagnana
+  1553                 Ghivizzano Borgoamozzano
+  1554                    Polisportiva Bucinese
+  1555                      Deportivo La Guaira
+  1556                          Cjarlins Muzane
+  1557                       Ital-Lenti Belluno
+  1558                     Stella Club d'Adjamé
+  1559                        Borgosesia Calcio
+  1560                             Abano Calcio
+  1561                          Carpi Primavera
+  1562                       Atletico San Paolo
+  1563                           CD Árabe Unido
+  1564                          Naxxar Lions FC
+  1565                             SCO Angers B
+  1566                   Club Nacional Asunción
+  1567                  ASD Borgorosso Arenzano
+  1568                                AC Mestre
+  1569                             HJK Helsinki
+  1570                        Concordia Chiajna
+  1571               ASD Union ArzignanoChiampo
+  1572                         FC Legnago Salus
+  1573                 ASD Fortis Juventus 1909
+  1574                          Rozwój Katowice
+  1575                              SSD Mapello
+  1576               Resende Futebol Clube (RJ)
+  1577                               FC Otranto
+  1578                                  SV Ried
+  1579                        SS Sambenedettese
+  1580                     Piacenza Calcio 1919
+  1581                      SS Racing Club Roma
+  1582                        Olbia Calcio 1905
+  1583                          Muravera Calcio
+  1584                     Kardemir Karabükspor
+  1585                             AC Este 1920
+  1586                       Beroe Stara Zagora
+  1587                        Crotone Primavera
+  1588                          Siracusa Calcio
+  1589                        Urbs Reggina 1914
+  1590                             Ümraniyespor
+  1591                          Cavese Berretti
+  1592                        Città di Gragnano
+  1593                          Nocerina Calcio
+  1594                                  AD Fafe
+  1595                Virtus Francavilla Calcio
+  1596                            FCV Dender EH
+  1597                    Krylya Sovetov Samara
+  1598                             Arsenal Tula
+  1599                   AS Viterbese Castrense
+  1600                              FC Grosseto
+  1601                       Puskás Akadémia FC
+  1602                      Sant'Omero Palmense
+  1603                   Unicusano Fondi Calcio
+  1604                       A.C. Calvina Sport
+  1605                 ASD Nibbiano & Valtidone
+  1606                                BK Häcken
+  1607                         FBC Saronno 1910
+  1608                             Terek Grozny
+  1609            Santa Cruz Futebol Clube (PE)
+  1610                                 Cortuluá
+  1611                               Sagan Tosu
+  1612                           Nuorese Calcio
+  1613                   Criciúma Esporte Clube
+  1614                              US Vibonese
+  1615                          Avezzano Calcio
+  1616                         US Agropoli 1921
+  1617          Associação Atlética Ponte Preta
+  1618                            GIF Sundsvall
+  1619                              RFC Seraing
+  1620                      Esporte Clube Bahia
+  1621                            Botev Plovdiv
+  1622                         AS Giana Erminio
+  1623             Bruk-Bet Termalica Nieciecza
+  1624                            ASD Due Torri
+  1625                         Sportivo Luqueño
+  1626                               Ravenna FC
+  1627                             Atletico Uri
+  1628                             Racing Fondi
+  1629                 Ternana Unicusano Calcio
+  1630                        Ciliverghe Calcio
+  1631                          ASD Sona Calcio
+  1632                              FC Südtirol
+  1633                    NK Aluminij Kidricevo
+  1634                        Pirin Blagoevgrad
+  1635                            MC Fermana FC
+  1636                        Trastevere Calcio
+  1637                                     FCSB
+  1638                             Slavia Sofia
+  1639                                  Odds BK
+  1640                       ASD Albissola 2010
+  1641                            SS Monza 1912
+  1642                        Rende Calcio 1968
+  1643                              Wisla Plock
+  1644                            AC Crema 1908
+  1645                           SPAL Primavera
+  1646                        Paganese Berretti
+  1647                            Korona Kielce
+  1648                      Benevento Primavera
+  1649                         Portland Timbers
+  1650                 Arzachena Costa Smeralda
+  1651                 FC Paris Saint-Germain B
+  1652                      NK Ankaran Hrvatini
+  1653                       Raja Club Athletic
+  1654                            Flamurtari FC
+  1655                        AS Bisceglie 1913
+  1656                              CD Ñublense
+  1657                         AC Pisa Berretti
+  1658                             Juventus U23
+  1659                         ACD Campodarsego
+  1660                            Ascoli Calcio
+  1661                        LR Vicenza Virtus
+  1662                             Porto Torres
+  1663                               Fermana FC
+  1664                                RC Cesena
+  1665                               ASD Astrea
+  1666                           Albissola 2010
+  1667                      Vis Pesaro dal 1898
+  1668                                SS Arezzo
+  1669                      Senglea Athletic FC
+  1670                      Virtusvecomp Verona
+  1671          Büyüksehir Belediye Erzurumspor
+  1672                          Unión La Calera
+  1673                            Santos FC U20
+  1674                          FC Schaffhausen
+  1675                     Anorthosis Famagusta
+  1676                    Standard de Liège U21
+  1677                                  Real SC
+  1678                                 SSC Bari
+  1679                 Clube Atlético Mineiro B
+  1680                       ASD Lanusei Calcio
+  1681                           Inter Under 17
+  1682                           Potenza Calcio
+  1683                          Apollon Smyrnis
+  1684                 ASD Arzignano Valchiampo
+  1685                            Vicenza Youth
+  1686                              FK Tönsberg
+  1687                      Club Africain Tunis
+  1688                           Vejle Boldklub
+  1689                            Dinamo Batumi
+  1690                         Olimpia Asunción
+  1691                          La Fiorita 1967
+  1692                       Zemplin Michalovce
+  1693                               SC Braga B
+  1694                                FK Kukësi
+  1695                      Real Salt Lake City
+  1696                           Modena FC 2018
+  1697                           USD Caravaggio
+  1698                         Reggio Audace FC
+  1699                                Como 1907
+  1700                                Cesena FC
+  1701                          Franciacorta FC
+  1702                            Al-Salmiya SC
+  1703                             US Avranches
+  1704                           GSD Ambrosiana
+  1705                       SC Atletico Cenaia
+  1706                              SSD Palermo
+  1707                           Sicula Leonzio
+  1708                                 AC Monza
+  1709                          ACD Sangiustese
+  1710                               US Pianese
+  1711                         Spartak 2 Moscow
+  1712                            Perugia Youth
+  1713      Club Atlético Central Córdoba (SdE)
+  1714                     HNK Cibalia Vinkovci
+  1715                ViOn Zlate Moravce-Vrable
+  1716                            Balikesirspor
+  1717                        Calcio Brusaporto
+  1718                       Castelsardo Calcio
+  1719               Lusitano Ginásio Clube SAD
+  1720                        FC Erzgebirge Aue
+  1721                      Goiás Esporte Clube
+  1722                              FC Botosani
+  1723                         Qingdao Huanghai
+  1724                               AC Gozzano
+  1725                                 AC Nardò
+  1726                       SSD Fidelis Andria
+  1727                      Red Bull Bragantino
+  1728                         FC Ponsacco 1920
+  1729                                   Felino
+  1730                           Stabæk Fotball
+  1731                          Vigor Carpaneto
+  1732                            Akhmat Grozny
+  1733                         US Grosseto 1912
+  1734                             Reggina 1914
+  1735                              HNK Sibenik
+  1736                           Mumbai City FC
+  1737                                Hatayspor
+  1738                    Club de Foot Montréal
+  1739                      Baltika Kaliningrad
+  1740                          CD 1º de Agosto
+  1741                                   Al-Ain
+  1742                               LR Vicenza
+  1743                         Spartaks Jurmala
+  1744                           US Savoia 1908
+  1745                            Lucchese 1905
+  1746                             Mantova 1911
+  1747                               Palermo FC
+  1748                    ACSM Politehnica Iasi
+  1749                    Boavista Porto FC U23
+  1750                       Calcio Foggia 1920
+  1751                        US Viterbese 1908
+  1752                         Olympique Lyon B
+  1753                             LOSC Lille B
+  1754                         SS Turris Calcio
+  1755                  Club Atlético Temperley
+  1756                      Ceará Sporting Club
+  1757                             Union Feltre
+  1758                           Pro Sesto 1913
+  1759                           Rio Ave FC U23
+  1760                             KRC Genk U18
+  1761                          Hamrun Spartans
+  1762                            IFK Mariehamn
+  1763                            Dynamo Moscow
+  1764                           ACN Siena 1904
+  1765                              Kocaelispor
+  1766                      Monterosi Tuscia FC
+  1767                       Latina Calcio 1932
+  1768                          Ancona Matelica
+  1769                SSU Politehnica Timisoara
+  1770                                AC Trento
+  1771                            Aris Limassol
+  1772              FK Metalac Gornji Milanovac
+  1773                   Royal Excelsior Virton
+  1774                          FK Oleksandriya
+  1775                              Yokohama FC
+  1776                               FC Sète 34
+  1777                              SönderjyskE
+  1778                                Novara FC
+  1779                              Casa Pia AC
+  1780                           Alcione Milano
+  1781                    ASD Oasi Sanfeliciana
+  1782                          US Livorno 1915
+  1783                                     LASK
+  1784                         Alemannia Aachen
+  1785                           VfL Bochum U19
+  1786                            VfL Bochum II
+  1787                           Trelleborgs FF
+  1788                           Hertha BSC U19
+  1789                            Hertha BSC II
+  1790                      FC Bayern Munich II
+  1791                         VfB Stuttgart II
+  1792                              TuS Koblenz
+  1793                          Hamburger SV II
+  1794                         Hamburger SV U19
+  1795                            SV Kapfenberg
+  1796                       FC Energie Cottbus
+  1797                     Borussia Dortmund II
+  1798                   TSG 1899 Hoffenheim II
+  1799                  TSG 1899 Hoffenheim U19
+  1800                        Kickers Offenbach
+  1801                           Bohemians 1905
+  1802                        FC Schalke 04 U19
+  1803                         FC Schalke 04 II
+  1804                  Bayer 04 Leverkusen U19
+  1805                   Bayer 04 Leverkusen II
+  1806                            VfL Osnabrück
+  1807                      SV Werder Bremen II
+  1808                           Hannover 96 II
+  1809                            1.FC Köln U19
+  1810                             1.FC Köln II
+  1811                   Eintracht Frankfurt II
+  1812                  Eintracht Frankfurt U19
+  1813                          Rot Weiss Ahlen
+  1814             Borussia Mönchengladbach U19
+  1815                          SC Freiburg U19
+  1816                       SpVgg Unterhaching
+  1817                         1.FC Saarbrücken
+  1818                             BATE Borisov
+  1819                       1.FSV Mainz 05 U19
+  1820                        1.FSV Mainz 05 II
+  1821                        1.FC Nuremberg II
+  1822                  Enosis Neon Paralimniou
+  1823                          Shimizu S-Pulse
+  1824                        Deportivo Táchira
+  1825                         Yverdon Sport FC
+  1826                         Renova Dzepciste
+  1827                          SpVgg Neckarelz
+  1828 Associação Portuguesa de Desportos (SP) B
+  1829                 Etoile Sportive du Sahel
+  1830                 Metalurg Donetsk (-2015)
+  1831                       Urawa Red Diamonds
+  1832                       FC Carl Zeiss Jena
+  1833                           SC Freiburg II
+  1834                          Kashima Antlers
+  1835              Borussia Mönchengladbach II
+  1836                       Akademisk Boldklub
+  1837                          Hannover 96 U19
+  1838                        VfL Wolfsburg U19
+  1839                        SG Dynamo Dresden
+  1840                     SV Werder Bremen U19
+  1841                                Tom Tomsk
+  1842                        CS Sedan-Ardennes
+  1843                             Dinamo Minsk
+  1844                         VfL Wolfsburg II
+  1845                      FK Horizont Turnovo
+  1846                   1.FC Kaiserslautern II
+  1847                                Tromsø IL
+  1848                              Jeju United
+  1849                        1.FC Nürnberg U19
+  1850                            Chemnitzer FC
+  1851                           Kashiwa Reysol
+  1852                           Polonia Warsaw
+  1853                       SC Wiener Neustadt
+  1854                      Rot-Weiß Oberhausen
+  1855                                VfR Aalen
+  1856                       SV Wehen Wiesbaden
+  1857                          FC Augsburg U19
+  1858                            Kaizer Chiefs
+  1859                          Preußen Münster
+  1860                  1.FC Kaiserslautern U19
+  1861                      SSV Jahn Regensburg
+  1862                         Shkendija Tetovo
+  1863                          Albirex Niigata
+  1864                     1.FC Heidenheim 1846
+  1865                   FC Twente Enschede U21
+  1866              Clube Atlético Linense (SP)
+  1867                             Assyriska FF
+  1868                            Polonia Bytom
+  1869                     FC Bayern Munich U19
+  1870                            Hallescher FC
+  1871                  Eintracht Frankfurt U17
+  1872                        FC Hradec Kralove
+  1873                           FC Augsburg II
+  1874                  SpVgg Greuther Fürth II
+  1875               Esporte Clube Pelotas (RS)
+  1876                    Fortuna Düsseldorf II
+  1877                            FC Winterthur
+  1878              Mirassol Futebol Clube (SP)
+  1879                       Pandurii Targu Jiu
+  1880                             FK Haugesund
+  1881                      Stuttgarter Kickers
+  1882                    SK Tavriya Simferopol
+  1883                        Club Alianza Lima
+  1884                                 FC Lahti
+  1885             Borussia Mönchengladbach U17
+  1886                        VfB Stuttgart U19
+  1887                            CS Marítimo B
+  1888                               Elazigspor
+  1889                Eintracht Braunschweig II
+  1890                                 CD Mafra
+  1891                                SV Grödig
+  1892                       Shakhtar 3 Donetsk
+  1893                          SC Fortuna Köln
+  1894                           Rydaholms GoIF
+  1895                               PFC Simurq
+  1896                          SV Lippstadt 08
+  1897                      SC Paderborn 07 U19
+  1898                            Holstein Kiel
+  1899                                  SC Verl
+  1900                       SC Paderborn 07 II
+  1901                               FBC Melgar
+  1902                           SC Wiedenbrück
+  1903         Universidad San Martín de Porres
+  1904                      FC Vysocina Jihlava
+  1905                                 FC Vaduz
+  1906                      SV Darmstadt 98 U19
+  1907                 Barra Futebol Clube (SC)
+  1908                              Liaoning FC
+  1909               VfV Borussia 06 Hildesheim
+  1910                           1.FC Magdeburg
+  1911                  Bayer 04 Leverkusen U17
+  1912                         FC Viktoria Köln
+  1913              Grasshopper Club Zürich U18
+  1914                             Altinordu FK
+  1915               RasenBallsport Leipzig U19
+  1916                RasenBallsport Leipzig II
+  1917                        Karlsruher SC U19
+  1918                Ultimate Strikers Academy
+  1919                        Tampa Bay Rowdies
+  1920                      FC Ingolstadt 04 II
+  1921                   Jeonbuk Hyundai Motors
+  1922               Guarani Futebol Clube (SP)
+  1923                  Chongqing Dangdai Lifan
+  1924                              D.C. United
+  1925                             SC Braga U19
+  1926                    AS Nancy-Lorraine U19
+  1927                               SCR Altach
+  1928                               Caracas FC
+  1929                         Hamburger SV U17
+  1930                           SKN St. Pölten
+  1931                        FC Zbrojovka Brno
+  1932                          Rot-Weiß Erfurt
+  1933                                SV Meppen
+  1934                       BSG Chemie Leipzig
+  1935                          Daejeon Citizen
+  1936                      HSK Zrinjski Mostar
+  1937                              Giresunspor
+  1938                  Tianjin Tianhai (-2019)
+  1939                           ZFC Meuselwitz
+  1940                    Arminia Bielefeld U19
+  1941                          FC Augsburg U17
+  1942                     GNK Dinamo Zagreb II
+  1943                   Fortuna Düsseldorf U19
+  1944                             Tianjin Teda
+  1945                           FC São Paulo B
+  1946                            FC Pipinsried
+  1947                      FC Wacker Innsbruck
+  1948                    SK Austria Klagenfurt
+  1949                         KFC Uerdingen 05
+  1950                  Fortaleza Esporte Clube
+  1951                  SG Sonnenhof Großaspach
+  1952                          Sporting CP U23
+  1953                             TSV Hartberg
+  1954                       Sportfreunde Lotte
+  1955                    1.FC Union Berlin U19
+  1956                   FSV Union Fürstenwalde
+  1957                             FC Liefering
+  1958                                 Paris FC
+  1959                              FSV Zwickau
+  1960                  1.FC Lokomotive Leipzig
+  1961                              Valmiera FC
+  1962                              MFK Karvina
+  1963                        Naestved Boldklub
+  1964               América Futebol Clube (MG)
+  1965                      SV Waldhof Mannheim
+  1966                         Türkgücü München
+  1967               RasenBallsport Leipzig U17
+  1968                          Pohang Steelers
+  1969                  FC Viktoria 1889 Berlin
+  1970                      FC Villarreal Youth
+  1971                        KSV Hessen Kassel
+  1972                     FC Nordsjaelland U19
+  1973                    1.FC Union Berlin U17
+  1974                       Académico Viseu FC
+  1975                             Júbilo Iwata
+  1976                                WSG Tirol
+  1977                  TSG 1899 Hoffenheim U17
+  1978                 FC Admira Wacker Mödling
+  1979                           Wuppertaler SV
+  1980                   Vitória Guimarães SC B
+  1981             Al Ittihad Kalba Sports Club
+  1982                 SpVgg Greuther Fürth U19
+  1983                          Esperance Tunis
+  1984                                RC Lens B
+  1985                              FC Gueugnon
+  1986                          Masvingo United
+  1987                            US Boulogne B
+  1988                      Sporting Toulon Var
+  1989                      FC Valenciennes U19
+  1990                                Vannes OC
+  1991                       Grenoble Foot 38 B
+  1992                   CS Louhans-Cuiseaux 71
+  1993                   KSV Roeselare (- 2021)
+  1994                            Canon Yaoundé
+  1995                             FC Le Mans B
+  1996                          Stade Lavallois
+  1997                                 Rodez AF
+  1998                                 Tours FC
+  1999                      AS Nancy-Lorraine B
+  2000            Entente Sannois Saint-Gratien
+  2001                      AS Moulins Football
+  2002                  Football Club de Vesoul
+  2003                             FC Lorient B
+  2004                               Al-Khor SC
+  2005                                 ES Sétif
+  2006                    Charlton Athletic U21
+  2007                           LOSC Lille U19
+  2008                                Junior FC
+  2009                       Olympique Lyon U19
+  2010                               AFC Tubize
+  2011                        HSC Montpellier B
+  2012                      HSC Montpellier U19
+  2013                  FC Girondins Bordeaux B
+  2014                 FC Sochaux-Montbéliard B
+  2015                       AS Saint-Étienne B
+  2016                  Fréjus-Saint-Raphaël FC
+  2017                             SR Saint-Dié
+  2018                      Gateway FC Abeokuta
+  2019                      AD São Caetano (SP)
+  2020                            Toulouse FC B
+  2021                             AJ Auxerre B
+  2022                         LB Châteauroux B
+  2023                    Heart of Lions Kpando
+  2024                        FC Stade Rennes B
+  2025                     US Créteil-Lusitanos
+  2026                 Panthère Sportive du Ndé
+  2027                  Olympique Marseille U19
+  2028                                AS Cannes
+  2029                              AS Monaco B
+  2030                       Alania Vladikavkaz
+  2031                        SO Cassis Carnoux
+  2032                          Neuchâtel Xamax
+  2033                          UJA Alfortville
+  2034                     Cotonsport de Garoua
+  2035                                Qadsia SC
+  2036                            AS Monaco U19
+  2037                             Club Guaraní
+  2038                               OGC Nice B
+  2039                               Samsunspor
+  2040                  Paris Saint-Germain U19
+  2041                 Athlétic Club Arlésien B
+  2042                          Unirea Urziceni
+  2043                  Luzenac Ariège Pyrénées
+  2044                                SM Caen B
+  2045                US Jeanne d'Arc Carquefou
+  2046                  NK Interblock Ljubljana
+  2047                    Seongnam Ilhwa Chunma
+  2048                   CD Motagua Tegucigalpa
+  2049                            FC Le Mont LS
+  2050                              FCO Dijon B
+  2051                     Besançon Racing Club
+  2052             Aparecida Esporte Clube (GO)
+  2053                        Valenciennes FC B
+  2054                              Gap Foot 05
+  2055                             FC Martigues
+  2056                     AS Saint-Étienne U19
+  2057                           AJ Auxerre U19
+  2058                               US Orléans
+  2059                    Al-Wahda FC Abu Dhabi
+  2060                               SAS Epinal
+  2061                      Le Poiré-sur-Vie VF
+  2062                                 Boluspor
+  2063                  Kardemir DC Karabükspor
+  2064                              Red Star FC
+  2065                 Club Athlétique Bizertin
+  2066           Thonon Évian Grand Genève FC B
+  2067                         Stade Brest 29 B
+  2068                      Pleudihen-sur-Rance
+  2069                             AS Cherbourg
+  2070                        FC Bourg-Péronnas
+  2071                   Renaissance de Ngoumou
+  2072                             AC Ajaccio B
+  2073                            FC Rouen 1899
+  2074                              SC Bastia B
+  2075                                Horoya AC
+  2076                Atlético Clube Goianiense
+  2077                            Dalian Aerbin
+  2078                            OGC Nizza U19
+  2079       Entente sportive Uzès Pont du Gard
+  2080                      Chamois Niortais FC
+  2081                                CA Bastia
+  2082                            Stade Reims B
+  2083                     Sports Réunis Colmar
+  2084                Neuchâtel Xamax FCS Youth
+  2085                            EA Guingamp B
+  2086                         AS Beauvais Oise
+  2087                            FC Nantes U19
+  2088                             Umm Salal SC
+  2089                               TP Mazembe
+  2090                       White Star Brüssel
+  2091                    FC Locomotive Tbilisi
+  2092                             Querétaro FC
+  2093                            SC Bastia U19
+  2094                             US Colomiers
+  2095                            Toulon Le Las
+  2096                      Tallinna FC Olympic
+  2097                    FC Universitatea Cluj
+  2098                               Randers FC
+  2099                     El-Jaish Sports Club
+  2100                                Zamora FC
+  2101                              FC Metz U19
+  2102                                FC Metz B
+  2103                    Vendée Luçon Football
+  2104                           Seraing United
+  2105                               FC Système
+  2106                              FC Nantes B
+  2107                        Rabotnicki Skopje
+  2108                              FK Jagodina
+  2109                           Real Avilés CF
+  2110                              RC Lens U19
+  2111                     Club Sportif Sfaxien
+  2112                               FK Liepaja
+  2113              Bourg-en-Bresse Péronnas 01
+  2114                FC Girondins Bordeaux U19
+  2115                     AS Mangasport Moanda
+  2116                               Paradou AC
+  2117                            Varese Calcio
+  2118                      FC Stade Rennes U19
+  2119                              SM Caen U19
+  2120                          Stade Reims U19
+  2121                          Toulouse FC U19
+  2122                            Al-Sailiya SC
+  2123                           ESTAC Troyes B
+  2124                          Orlando Pirates
+  2125                              ASM Belfort
+  2126                          Les Herbiers VF
+  2127                            USL Dunkerque
+  2128                   Thonon Évian Savoie FC
+  2129                      Luçon Football Club
+  2130                                   Pau FC
+  2131                             Ruch Chorzow
+  2132                  Sprimont Comblain Sport
+  2133                 Quevilly Rouen Métropole
+  2134                    AS Denguélé d’Odienné
+  2135                            AFAD Djékanou
+  2136                         El Tanque Sisley
+  2137                   Independiente Santa Fe
+  2138                  Avaí Futebol Clube (SC)
+  2139                             UE Engordany
+  2140                              Amiens SC B
+  2141                          AS Lyon-Duchère
+  2142                               NK Domzale
+  2143                            US Concarneau
+  2144                             ASEC Mimosas
+  2145                          Génération Foot
+  2146                      Racing Strasbourg B
+  2147                               AS Béziers
+  2148                      Maccabi Petah Tikva
+  2149                        Juventus Bukarest
+  2150                    Rovaniemen Palloseura
+  2151                 ASC Daco-Getica Bukarest
+  2152               FC Villefranche-Beaujolais
+  2153                                SO Cholet
+  2154                           SCO Angers U19
+  2155                            FCO Dijon U19
+  2156                             Istanbulspor
+  2157                                  Al-Raed
+  2158                        Nîmes Olympique B
+  2159                            Jura Sud Foot
+  2160                    Racing Strasbourg U19
+  2161                                FC Ashdod
+  2162                               AS Trencin
+  2163                      Minnesota United FC
+  2164                              Shenzhen FC
+  2165                            Amiens SC U19
+  2166                               Hatta Club
+  2167                    AS Vita Club Kinshasa
+  2168                               Al-Ettifaq
+  2169                         Kawkab Marrakech
+  2170                                AS Bamako
+  2171                             Al-Adalah FC
+  2172                              Pyramids FC
+  2173                               FC Chambly
+  2174                                Örebro SK
+  2175                        Leixões SC Sub-23
+  2176                 Shijiazhuang Ever Bright
+  2177                   Afrique Football Elite
+  2178                          Chicago Fire FC
+  2179                  Le Puy Foot 43 Auvergne
+  2180               Três Passos Atlético Clube
+  2181                      Racing Club Abidjan
+  2182                                 Altay SK
+  2183                Diables Noirs Brazzaville
+  2184                          FC Bastia-Borgo
+  2185                               Paris FC B
+  2186                             CD Calahorra
+  2187                         Deportivo Toluca
+  2188                        Al-Faisaly Harmah
+  2189                                USM Alger
+  2190                    Sporting Club de Lyon
+  2191                           Stade Briochin
+  2192                   Internacional de Lages
+  2193                Cuiabá Esporte Clube (MT)
+  2194                              FC Sion U21
+  2195                         Tokushima Vortis
+  2196                   Diambars Football Club
+  2197                  FC Stade-Lausanne-Ouchy
+  2198                      AS Dakar Sacré-Cœur
+  2199                                 FC Sochi
+  2200                        Lyon - La Duchère
+  2201                           Derby Académie
+  2202                                Rukh Lviv
+  2203                      JMG Academy Abidjan
+  2204                            Vendsyssel FF
+  2205                      SC Austria Lustenau
+  2206                  Salitas Football School
+  2207                             FC Porto U19
+  2208         Clube Futebol Estrela da Amadora
+  2209                          Gloria Bistrita
+  2210                              CD Trofense
+  2211                               SC Covilhã
+  2212                            GD Tourizense
+  2213            Club Atlético Boca Juniors II
+  2214                          Sporting CP U19
+  2215                                CD Fátima
+  2216                    Tacuary Football Club
+  2217                 Brasa Futebol Clube (SP)
+  2218                           SL Benfica U19
+  2219                   CD Olivais e Moscavide
+  2220                  Clube Oriental Lissabon
+  2221                             AD Carregado
+  2222                             FC Timisoara
+  2223                                 NK Celje
+  2224            São Carlos Futebol Clube (SP)
+  2225                          CD Nacional U19
+  2226                  Tupi Football Club (MG)
+  2227                          Ermis Aradippou
+  2228                           Merelinense FC
+  2229           Esporte Clube Santo André (SP)
+  2230                               SC Espinho
+  2231                             SC Freamunde
+  2232                                 Hanoi FC
+  2233                           Leixões SC U19
+  2234                             Padroense FC
+  2235                               SC Esmoriz
+  2236                              Amarante FC
+  2237                                  Leça FC
+  2238                                Brujas FC
+  2239                              Frenaros FC
+  2240                      Académica Coimbra B
+  2241                    Académica Coimbra U19
+  2242                    AD Fornos de Algodres
+  2243            Club 12 de Octubre de Itauguá
+  2244                      J.Malucelli Futebol
+  2245                 Vitória Guimarães SC U19
+  2246                        SC Maria da Fonte
+  2247                        Atlético Baleares
+  2248                             GD Serzedelo
+  2249               Sport Club Internacional B
+  2250                           UD Oliveirense
+  2251               Étoile Filante Ouagadougou
+  2252                         AD Pontassolense
+  2253             Villa Rio Esporte Clube (RJ)
+  2254                 FC Paços de Ferreira U19
+  2255                             Rebordosa AC
+  2256                                FK Khimki
+  2257                                Foolad FC
+  2258             Rio Preto Esporte Clube (SP)
+  2259                           Rio Ave FC U19
+  2260                            FC Pampilhosa
+  2261                              Gondomar SC
+  2262                             RC La Flèche
+  2263                       Villemomble Sports
+  2264                                 SL Nelas
+  2265                                   Shatin
+  2266                     Atromitos Geroskipou
+  2267                              Ayamonte CF
+  2268                   Vitória Setúbal FC U19
+  2269                         CD Pinhalnovense
+  2270                 SC Mineiro Aljustrelense
+  2271               AD Cerro de Reyes (- 2011)
+  2272                            Sertanense FC
+  2273           Grêmio Esportivo Anápolis (GO)
+  2274                       Hangzhou Greentown
+  2275                                 GD Lagoa
+  2276                             Louletano DC
+  2277                         CDR Quarteirense
+  2278                           FK Hajduk Kula
+  2279            Rio Branco Esporte Clube (SP)
+  2280               Rio Branco Sport Club (PR)
+  2281                         União Leiria U19
+  2282                          FC Gloria Buzău
+  2283                             GDR Monsanto
+  2284                       Al-Ittihad Tripoli
+  2285                               AD Lousada
+  2286                                 UD Serra
+  2287                                GD Maputo
+  2288  Associação Portuguesa de Desportos (SP)
+  2289                              Odivelas FC
+  2290                              Vissel Kobe
+  2291  União Recreativa dos Trabalhadores (MG)
+  2292              Esporte Clube Juventude U20
+  2293                        Consadole Sapporo
+  2294                        CF Oliveira Douro
+  2295                                  FCSB II
+  2296                    Granada 74 CF (-2009)
+  2297                         FC Flora Tallinn
+  2298             Joinville Esporte Clube (SC)
+  2299              Esporte Clube Cruzeiro (RS)
+  2300                       SC União Torreense
+  2301             Vila Nova Futebol Clube (GO)
+  2302                       Juventude Évora SC
+  2303        Angra dos Reis Esporte Clube (RJ)
+  2304                                Najran SC
+  2305                               AD Camacha
+  2306            Olé Brasil Futebol Clube (SP)
+  2307                            SC Valenciano
+  2308                           Santa Maria FC
+  2309                Bangu Atlético Clube (RJ)
+  2310                                 AE Pafos
+  2311                              FC Madalena
+  2312              Ipatinga Futebol Clube (MG)
+  2313                      APOP Kinyras Pegias
+  2314               América Futebol Clube (RN)
+  2315                              SC Vianense
+  2316            Juazeiro Empreendimentos (CE)
+  2317                         SC Beira-Mar U19
+  2318                                AA Avanca
+  2319                     Lusitânia FC Lourosa
+  2320                    Oliveira do Bairro SC
+  2321                Racing Club de Montevideo
+  2322                   Defensores de Belgrano
+  2323             Clube Atlético Guaçuano (SP)
+  2324                Toledo Esporte Clube (PR)
+  2325                    Atlético SC Reguengos
+  2326                       Aliados FC Lordelo
+  2327             Morrinhos Futebol Clube (GO)
+  2328                            Feyenoord U18
+  2329                                Caldas SC
+  2330  Clube Esportivo de Bento Gonçalves (RS)
+  2331             Colorado Atletico Clube (PR)
+  2332                                FK Qabala
+  2333                          Bidvest Wits FC
+  2334          Clube de Desportos do Maxaquene
+  2335                 Liga Muçulmana de Maputo
+  2336                      Portimonense SC U19
+  2337                   Digenis Akritas Morfou
+  2338                       CF Esperança Lagos
+  2339             Grêmio Barueri Futebol Ltda.
+  2340         Guaratinguetá Futebol Ltda. (SP)
+  2341                                 Daegu FC
+  2342                     Recreativo do Libolo
+  2343                            Lobi Stars FC
+  2344                               AO Trikala
+  2345                    Guangdong Sunray Cave
+  2346                              AD Limianos
+  2347                             AEL Limassol
+  2348                                FC Brasov
+  2349                              FC Tirsense
+  2350                              GC Alcobaça
+  2351                             FK Smederevo
+  2352                                 UD Tocha
+  2353                                FK Atyrau
+  2354              Juventude Clube Aljezurense
+  2355                          Panetolikos GFS
+  2356                        Independiente FBC
+  2357                  Feyenoord/Excelsior U19
+  2358          Coimbra Esporte Clube Ltda (MG)
+  2359                          La Vitréenne FC
+  2360                          FCM Targu Mures
+  2361               Shooting Stars Sports Club
+  2362      União Frederiquense de Futebol (RS)
+  2363                                ASO Chlef
+  2364                Club Sportivo San Lorenzo
+  2365               SE Palmeiras São Paulo U20
+  2366                  Esporte Clube Juventude
+  2367      Agremiação Esportiva Canedense (GO)
+  2368                            Kecskeméti TE
+  2369                        Deportes Cobreloa
+  2370         Sociedade Esportiva do Gama (DF)
+  2371              Esporte Clube Noroeste (SP)
+  2372                       Gil Vicente FC Y19
+  2373                       GD Oliveira Frades
+  2374              Esporte Clube Ipitanga (BA)
+  2375          Santa Helena Esporte Clube (GO)
+  2376                Esporte Clube Itaúna (MG)
+  2377                             SC Mirandela
+  2378                               GD Velense
+  2379             Atlético Clube Juventus (AC)
+  2380                           AC Alcanenense
+  2381         Macaé Esporte Futebol Clube (RJ)
+  2382                                 Amora FC
+  2383          Sport Club Corinthians Alagoano
+  2384                          CD Feirense U19
+  2385             Rio Claro Futebol Clube (SP)
+  2386                           Dacia Chisinau
+  2387                         SC Olhanense U19
+  2388               Asociación Deportivo Pasto
+  2389                            CD Chivas USA
+  2390                      Jaguares de Chiapas
+  2391                              Västerås SK
+  2392             Grêmio Esportivo Osasco (SP)
+  2393                Njalla Quan Sport Academy
+  2394                                 Moura AC
+  2395                   ABC Futebol Clube (RN)
+  2396                            Persepolis FC
+  2397                  Al-Shabab Al-Arabi Club
+  2398                          CD Costa do Sol
+  2399                        FK Rudar Prijedor
+  2400                     Club Deportivo Morón
+  2401                   Algarve United Futebol
+  2402   Lusitano Ginásio Clube Moncarapachense
+  2403                          Al Qadisiyah FC
+  2404                 Atlético Monte Azul (SP)
+  2405                 Grêmio Osasco Audax (SP)
+  2406                                AD Oeiras
+  2407                          Vilaverdense FC
+  2408            Futebol Clube Santa Cruz (RS)
+  2409                         CS Norte América
+  2410               Guarany Bagé Futebol Clube
+  2411                          CA 3 de Febrero
+  2412                          GD Alcochetense
+  2413                       Olympiakos Nicosia
+  2414      Associação Atlética Santa Rita (AL)
+  2415                 Cotia Futebol Clube (SP)
+  2416              Botafogo Rio de Janeiro U17
+  2417                                SC Lourel
+  2418                   Nea Salamina Famagusta
+  2419             Fluminense Football Club U20
+  2420             Clube de Regatas Brasil (AL)
+  2421                                 GD Joane
+  2422                    Clube Futebol Benfica
+  2423                        Wadi Degla FC U23
+  2424                   Canoas Sport Club (RS)
+  2425                          Tractor Sazi FC
+  2426                              AC Vila Meã
+  2427                  Kabuscorp SC do Palanca
+  2428                             Al-Wakrah SC
+  2429                            CR Belouizdad
+  2430                         CD Portosantense
+  2431                      CA Petróleos Luanda
+  2432         Friburguense Atlético Clube (RJ)
+  2433                          CD Cova Piedade
+  2434             Madureira Esporte Clube (RJ)
+  2435                        Estoril Praia U19
+  2436                             SU Sintrense
+  2437                 Treze Futebol Clube (PB)
+  2438                        Zawisza Bydgoszcz
+  2439         Esporte Clube Novo Hamburgo (RS)
+  2440               Sport Club Santa Rita (AL)
+  2441                         Tudu Mighty Jets
+  2442                          Ethnikos Achnas
+  2443                    Campinense Clube (PB)
+  2444                               FC Chibuto
+  2445                 Mpumalanga Black Aces FC
+  2446                            SC Salgueiros
+  2447                 Orlando City Soccer Club
+  2448             Fluminense Football Club U17
+  2449                        Ordabasy Shymkent
+  2450           Esporte Clube Passo Fundo (RS)
+  2451             Americano Futebol Clube (RJ)
+  2452                             AO Platanias
+  2453               Galícia Esporte Clube (BA)
+  2454      Clube Atlético Votuporanguense (SP)
+  2455                           Benfica Luanda
+  2456                 Botafogo Sport Club (BA)
+  2457        Sampaio Corrêa Futebol Clube (MA)
+  2458                        FC U Craiova 1948
+  2459                              O Elvas CAD
+  2460                 Paysandu Sport Club (PA)
+  2461                             FC Porto U17
+  2462                          El Mokawloon SC
+  2463                             Lusitano FCV
+  2464                              AOK Kerkyra
+  2465                           FK Borac Cacak
+  2466                              Mortágua FC
+  2467           Clube Sociedade Esportiva (AL)
+  2468                                Kuwait SC
+  2469                        Hapoel Beer Sheva
+  2470                     Akhisar Belediyespor
+  2471                           Torpedo Moscow
+  2472                     Club Atlético Torque
+  2473                         Tala'ea El Gaish
+  2474                         Charity Stars FC
+  2475                         FC Tosno (-2018)
+  2476                                 Petrojet
+  2477                              El Masry SC
+  2478                   FC Comercial de Viçosa
+  2479                        SB Castelo Branco
+  2480                         FC Pedras Rubras
+  2481                               CD Sobrado
+  2482                                  FC Lixa
+  2483                 CCD Santa Eulália Vizela
+  2484                       FC Felgueiras 1932
+  2485                               CD Cinfaes
+  2486                Sport Club São Paulo (RS)
+  2487                              Santos FC B
+  2488                            Nueva Chicago
+  2489                         FC Shirak Gyumri
+  2490                          Boavista FC Y19
+  2491                           AD Oliveirense
+  2492                               CF Mounana
+  2493                 Mordovia Saransk (-2020)
+  2494           Centro Sportivo Paraibano (PB)
+  2495              Clube Esportivo Aimoré (RS)
+  2496                               FK Teplice
+  2497                   EC XV de Novembro (SP)
+  2498                       Ittihad Alexandria
+  2499                        Moreirense FC U19
+  2500                              FC Marinhas
+  2501                           BFC Daugavpils
+  2502              FK Kruoja Pakruojis (-2015)
+  2503          Clube Atlético Penapolense (SP)
+  2504                       Forjães Sport Club
+  2505              Cianorte Futebol Clube (PR)
+  2506                Liga Desportiva de Maputo
+  2507                 Al-Mesaimeer Sports Club
+  2508                           Sport Huancayo
+  2509        Sport Club Corinthians Paulista B
+  2510                             SC Vila Real
+  2511                   Club Jorge Wilstermann
+  2512                          Chongqing Lifan
+  2513                              Club Necaxa
+  2514                            PS Kemi Kings
+  2515                          Al-Ahly Tripoli
+  2516                           SG Sacavenense
+  2517                           FC Barreirense
+  2518                   SER Caxias do Sul (RS)
+  2519                            FC Arouca U19
+  2520                      Club Atlético Unión
+  2521                           CD Tondela U19
+  2522                           AD Sanjoanense
+  2523      Esporte Clube Tigres do Brasil (RJ)
+  2524                    Khaitan Sporting Club
+  2525                            SC Sagamihara
+  2526                            SD Compostela
+  2527                               Hajer Club
+  2528                                Anadia FC
+  2529                              SC Praiense
+  2530                 Oeste Futebol Clube (SP)
+  2531                             CS Herediano
+  2532               Tapajós Futebol Clube (PA)
+  2533                            Meizhou Hakka
+  2534  Associação Ferroviária de Esportes (SP)
+  2535                                  Zira FC
+  2536              Botafogo Futebol Clube (SP)
+  2537                      NorthEast United FC
+  2538                             FC Cesarense
+  2539                      Ironi Kiryat Shmona
+  2540                       Unisport de Bafang
+  2541                               GD Gafanha
+  2542                          SC São João Ver
+  2543                             Thanh Hoa FC
+  2544                           Vegalta Sendai
+  2545              Londrina Esporte Clube (PR)
+  2546             Grêmio Esportivo Brasil (RS)
+  2547                           SU 1º Dezembro
+  2548                Guizhou Hengfeng Zhicheng
+  2549        Gaziantep Büyüksehir Belediyespor
+  2550               FC Stumbras Kaunas (-2019)
+  2551                       GD Fabril Barreiro
+  2552             Juventude de Pedras Salgadas
+  2553                          Bucheon FC 1995
+  2554                        Cherno More Varna
+  2555                          Gandzasar Kapan
+  2556                                  FK Jerv
+  2557                            Boavista FC B
+  2558                             SC Braga U17
+  2559          São Bernardo Futebol Clube (SP)
+  2560                     AA Aparecidense (GO)
+  2561                          AR São Martinho
+  2562                       GD Chaves Satelite
+  2563            Salgueiro Atlético Clube (PE)
+  2564                                CD Aves B
+  2565                        UD Vilafranquense
+  2566                     GD Estoril Praia U17
+  2567                                 Kazma SC
+  2568                              Manama Club
+  2569               Moto Club de São Luís (MA)
+  2570                          Maccabi Netanya
+  2571                          Moghreb Tétouan
+  2572              Recreativo Águias Musgueira
+  2573                            Dibba Al-Hisn
+  2574                     Red Bull Brasil (SP)
+  2575                             Omiya Ardija
+  2576                              Al-Fayha FC
+  2577                   FC Paços de Ferreira B
+  2578                          SR Almancilense
+  2579            Luverdense Esporte Clube (MT)
+  2580                               FC Imabari
+  2581            Santa Cruz Futebol Clube (RN)
+  2582                   Gazisehir Gaziantep FK
+  2583                             Rio Ave FC B
+  2584                              Akhisarspor
+  2585                         CR Ferreira Aves
+  2586                           AD Nogueirense
+  2587                           OFK Grbalj U19
+  2588                   Clube Olímpico Montijo
+  2589                     Estrela Vendas Novas
+  2590            Centro Sportivo Alagoano (AL)
+  2591                          CF Canelas 2010
+  2592                Grêmio Novorizontino (SP)
+  2593                           Paraná Clube B
+  2594             Clube Atlético Juventus (SP)
+  2595                               Monagas SC
+  2596                               Gangwon FC
+  2597                    SC Penalva do Castelo
+  2598                            Alki Oroklini
+  2599                            Al-Taawoun FC
+  2600                 Barra Futebol Clube (RS)
+  2601                       Zhejiang Greentown
+  2602    Sampaio Corrêa Futebol e Esporte (RJ)
+  2603                      Portimonense SC U23
+  2604                   Club Atlético All Boys
+  2605                CD Cultural de Montalegre
+  2606                              Al-Batin FC
+  2607                           Clube Condeixa
+  2608                              CD Aves U23
+  2609                                      ATK
+  2610                          CS Marítimo U23
+  2611                Vitória de Setúbal FC U23
+  2612                         Brown de Adrogue
+  2613                                RD Águeda
+  2614                       CD Feirense Sub-23
+  2615                      Shakhtar Donetsk II
+  2616                              Akwa United
+  2617                        Enugu Rangers IFC
+  2618          Fútbol Consultants Desamparados
+  2619               Brusque Futebol Clube (SC)
+  2620                       CD Santa Clara U19
+  2621                    Santos de Guápiles FC
+  2622                        Dibba Al-Fujairah
+  2623                                 Águia CD
+  2624                           Apollon Pontou
+  2625                   Club Atlético Aldosivi
+  2626                       Clube do Remo (PA)
+  2627                      FK Spartak Subotica
+  2628                       Belenenses SAD U23
+  2629               CF Belenenses Lissabon U19
+  2630                        Cape Town City FC
+  2631                             SC Braga U23
+  2632                       Lokomotiv Tashkent
+  2633                          Shonan Bellmare
+  2634                                AO Xanthi
+  2635                                 PFC Lviv
+  2636                              Denizlispor
+  2637                         Matsumoto Yamaga
+  2638                      Olympique Khouribga
+  2639                              Al-Riffa SC
+  2640                      Club Sol de América
+  2641                              Khor Fakkan
+  2642                       FC Vizela Youth 19
+  2643                         XV de Piracicaba
+  2644                                 Berço SC
+  2645                   Clube Atletico Molelos
+  2646                                 SC Ideal
+  2647  Operário Ferroviário Esporte Clube (PR)
+  2648                 FC Paços de Ferreira U17
+  2649                             SC Coimbrões
+  2650                              GD Mirandês
+  2651                     Caçadores das Taipas
+  2652                         FC Famalicão U23
+  2653                           Avispa Fukuoka
+  2654                       AA Portuguesa (RJ)
+  2655                           SL Benfica U23
+  2656                                 Damac FC
+  2657                        Valadares Gaia FC
+  2658                                  HB Köge
+  2659                         CD Universitario
+  2660                               Rukh Brest
+  2661                         Renofa Yamaguchi
+  2662                              USC Paredes
+  2663                            CD Fátima SAD
+  2664                             Nashville SC
+  2665                        Houston Dynamo FC
+  2666        Club de Regatas Vasco da Gama U20
+  2667                    Atlético Nacional U20
+  2668                    Atlas Guadalajara U20
+  2669               Clube Atlético Mineiro U20
+  2670                          Boavista FC U17
+  2671           Club Atlético Barracas Central
+  2672      Paraná Soccer Technical Center (PR)
+  2673                              Tokyo Verdy
+  2674      Associação Atlética Portuguesa (SP)
+  2675                      FK Borac Banja Luka
+  2676                                Adanaspor
+  2677                      CSD Câmara de Lobos
+  2678              Floresta Esporte Clube (CE)
+  2679 Asociación Atlética Argentinos Juniors II
+  2680                   Club Atlético Progreso
+  2681                     Bnei Yehuda Tel Aviv
+  2682                     Tianjin Jinmen Tiger
+  2683                           NA Hussein Dey
+  2684                        CD Tondela Sub-23
+  2685                            1.FC Slovacko
+  2686                          Deportes Tolima
+  2687                      Ho Chi Minh City FC
+  2688                                  Riga FC
+  2689                              Zhejiang FC
+  2690                            AC Marinhense
+  2691                              UD Santarém
+  2692                          Rotor Volgograd
+  2693                        Lion City Sailors
+  2694                   Royal Pari Fútbol Club
+  2695                        Wuhan Three Towns
+  2696                   CF Estrela Amadora SAD
+  2697                          JD Carregosense
+  2698                         CD El Ejido 2012
+  2699             Guanabara City Futebol Clube
+  2700                  NK Hrvatski Dragovoljac
+  2701                        Estoril Praia U23
+  2702                               FC Andorra
+  2703                     Mineros de Zacatecas
+  2704                                 NK Bravo
+  2705            Esporte Clube Água Santa (SP)
+  2706                         Shandong Taishan
+  2707                               Sepahan FC
+  2708                              ARC Oleiros
+  2709              Vitória de Guimarães SC U23
+  2710                                 Wuhan FC
+  2711                  FC Oliveira do Hospital
+  2712                            FC Vizela U23
+  2713                             Oita Trinita
+  2714                     Thanda Royal Zulu FC
+  2715                   FC Twente Enschede U19
+  2716                             FC Omniworld
+  2717                 Makedonija Gjorce Petrov
+  2718                               1. FC Brno
+  2719                        SC Heerenveen U19
+  2720                                FC Zwolle
+  2721                   sc Heerenveen/Emmen II
+  2722                         FC Groningen U19
+  2723                         FC Groningen U21
+  2724                            Helmond Sport
+  2725                            Feyenoord U21
+  2726                            NAC Breda U19
+  2727                     HFC Haarlem (- 2009)
+  2728                          AGOVV Apeldoorn
+  2729                           FC Utrecht U21
+  2730                        Vitesse/AGOVV U19
+  2731                        Vitesse/AGOVV U21
+  2732                         NEC Nijmegen U19
+  2733                   NEC NijmegenFC Oss U21
+  2734                                   FC Oss
+  2735                           AZ Alkmaar U21
+  2736                    Willem II Tilburg U21
+  2737                           RBC Roosendaal
+  2738                  Wuppertaler SV Borussia
+  2739                     Sparta Rotterdam U21
+  2740                     Sparta Rotterdam U19
+  2741             De Graafschap Doetinchem U21
+  2742                         ADO Den Haag U19
+  2743                      Heracles Almelo U21
+  2744                     Roda JC Kerkrade U19
+  2745                               SC Veendam
+  2746                         RKC Waalwijk U19
+  2747                         RKC Waalwijk U21
+  2748                       Ajax Amsterdam U19
+  2749                         ADO Den Haag U21
+  2750                       NK Slaven Zivinice
+  2751                             Kano Pillars
+  2752              VVV-Venlo/Helmond Sport U21
+  2753              VVV-Venlo/Helmond Sport U19
+  2754                           AZ Alkmaar U19
+  2755                  Excelsior Rotterdam U19
+  2756             De Graafschap Doetinchem U19
+  2757                         FC Aurore Bienne
+  2758                            NAC Breda U21
+  2759                         Saturn Ramenskoe
+  2760                        PSV Eindhoven U19
+  2761                                  FK Baku
+  2762                       Zaglebie Sosnowiec
+  2763                          Roasso Kumamoto
+  2764                        Willem II/RKC U19
+  2765                             Panserraikos
+  2766                       Zhemchuzhina Sochi
+  2767                     Pelita Jaya Karawang
+  2768                           Ajax Cape Town
+  2769                           CD El Nacional
+  2770                             FC Saburtalo
+  2771                       Royal Cappellen FC
+  2772                     De Treffers Under 19
+  2773                 FC Groningen/Cambuur U21
+  2774                        Mersin Idmanyurdu
+  2775                            Alphense Boys
+  2776                      Etar Veliko Tarnovo
+  2777                         VPV Purmersteijn
+  2778                           FC Inter Turku
+  2779                              ETO FC Győr
+  2780                          IFK Trollhättan
+  2781                            SV Spakenburg
+  2782                           FC Utrecht U19
+  2783                 FC Groningen/Cambuur U19
+  2784              FK Radnicki 1923 Kragujevac
+  2785               Central Coast Mariners U21
+  2786                Coritiba Foot Ball Club B
+  2787                           PEC Zwolle U19
+  2788                            F91 Dudelange
+  2789                         SV Babelsberg 03
+  2790                           KSV Oudenaarde
+  2791                              MSK Breclav
+  2792                          Valur Reykjavík
+  2793                       Vitesse Arnhem U21
+  2794                          Adelaide United
+  2795                      SC Veendam (- 2013)
+  2796                        SC Heerenveen U21
+  2797                           PEC Zwolle U21
+  2798                          Damash Gilan FC
+  2799                             Neftchi Baku
+  2800                     Roda JC Kerkrade U21
+  2801                           DVS '33 Ermelo
+  2802                          GVVV Veenendaal
+  2803                              Sandnes Ulf
+  2804                    Excelsior '31 Rijssen
+  2805                                Viborg FF
+  2806                       Vitesse Arnhem U19
+  2807                         FC Dordrecht U21
+  2808                            Kozakken Boys
+  2809                             Achilles '29
+  2810                               FC Kuusysi
+  2811                              Perth Glory
+  2812                           AZ Alkmaar U17
+  2813                            Feyenoord U19
+  2814                             KF Vushtrria
+  2815                 San Antonio Scorpions FC
+  2816                SC Cambuur-Leeuwarden U21
+  2817                         NEC Nijmegen U21
+  2818                               FC Lienden
+  2819                               Central FC
+  2820                            USV Elinkwijk
+  2821                      FK Radnik Bijeljina
+  2822                      Vitesse Arnheim U17
+  2823                         NEC Nijmegen U17
+  2824                  Excelsior Rotterdam U17
+  2825                    Willem II Tilburg U19
+  2826                     Sparta Rotterdam U17
+  2827             Go Ahead Eagles Deventer U19
+  2828                               VV Capelle
+  2829                         Hapoel Kfar Saba
+  2830                     San Francisco Deltas
+  2831                         FC Groningen U17
+  2832                            CR Al Hoceima
+  2833                             Hapoel Haifa
+  2834                            VVV-Venlo U19
+  2835                              FK Jablonec
+  2836                              SV TEC Tiel
+  2837                                  TOP Oss
+  2838                             FC Emmen U19
+  2839                        SC Spelle-Venhaus
+  2840                         Dunaújváros PASE
+  2841                      Fortuna Sittard U19
+  2842                               Eastern SC
+  2843                                OFK Backa
+  2844                                 EVV Echt
+  2845                         RKSV Groene Ster
+  2846                            VVV-Venlo U17
+  2847                                 SD Aucas
+  2848                              Arka Gdynia
+  2849                       Kuopion Palloseura
+  2850                     Middlesbrough FC U23
+  2851              Academia Puerto Cabello U20
+  2852                          FC St. Pauli II
+  2853                       Szeged-Csanád - GA
+  2854                           Falkenbergs FF
+  2855                        sc Heerenveen U17
+  2856                                 Club NXT
+  2857                        KSC Lokeren-Temse
+  2858                             FC Emmen U21
+  2859                   Sepsi OSK Sf. Gheorghe
+  2860                   Montevideo City Torque
+  2861                      Fortuna Sittard U21
+  2862                                NK Dekani
+  2863             Go Ahead Eagles Deventer U21
+  2864                         FC Groningen U18
+  2865                               Ajman Club
+  2866                                Volos NPS
