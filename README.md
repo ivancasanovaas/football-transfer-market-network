@@ -12,7 +12,7 @@ Football player transfers between clubs are analyzed as an economic network usin
 
 ## Contents
 
-* :notebook: [Network](notebooks/README.md)
+* :notebook: [Network](network/README.md)
 * :file_folder: [Codes](codes/README.md)
 * :clipboard: [Results](results/README.md)
 
