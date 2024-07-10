@@ -20,7 +20,7 @@ When executing the main program `main.f95`, it outputs several files divided in 
 
 On the other hand, the Susceptible-Infected-Susceptible dynamics provides 3 interesting magnitudes to measure as a function of 2 parameters (initial number of infected nodes, and the infection rate):
 
-- `SIS-life_time`: 
+- `SIS-life_time`: life-time distributions
 - `SIS-rho_st`: average steady-state prevalence
 - `SIS-rho_t`: empirical prevalence as a function of time
 
