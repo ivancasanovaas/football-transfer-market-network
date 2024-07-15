@@ -19,24 +19,39 @@ USE SIS_DYNAMICS
 
 IMPLICIT NONE
 
-character(len=256) 						:: edgelist_filepath		! characters (256)
-character(len=256) 						:: output_filespath			! characters (256)
-character(len=256)						:: dir,fname_SIS,a,b		! characters (256)
-logical 								:: istat					! boolean variables
-integer*8 								:: i,j,k,Niter			 	! auxiliar int.
-integer*8 								:: E,N,k_sum,k2_sum			! int. variables (properties)
-integer*8 								:: Ni0,T,M					! int. variables (SIS)
-real*8 									:: k_exp,k2_exp				! real variables (properties)
-real*8									:: lambda,delta 			! real variables (SIS)
-integer*8, dimension(:), allocatable 	:: D,V,ptr					! int. 1D arrays (properties)
-integer*8, dimension(:,:), allocatable 	:: E_list,E_list_em			! int. 2D arrays (properties)
-real*8, dimension(:), allocatable 		:: ddd,cdd,ccdd 			! real 1D arrays (properties)
-real*8, dimension(:), allocatable 		:: knn,c,knn_em,c_em		! real 1D arrays (properties)
-real*8, dimension(:), allocatable 		:: rho						! real 1D arrays (SIS)
 
 
 !-------------------------------------------------------------------
-!           READING THE INPUT PATHS & CREATE DIRECTORIES                                                                    
+!                      DEFINITION OF VARIABLES                                                                                          
+!-------------------------------------------------------------------
+
+character(len=256) 						:: edgelist_filepath		! characters (256)
+character(len=256) 						:: output_filespath			! characters (256)
+character(len=256)						:: dir,fname_SIS,a,b		! characters (256)
+
+!                             AUXILIAR                              
+!-------------------------------------------------------------------
+integer*8 								:: i,j,k,Niter				 ! auxiliar int.
+
+!                       STRUCTURAL PROPERTIES                      
+!-------------------------------------------------------------------
+integer*8 								:: E,N,k_sum,k2_sum			! int. variables
+real*8 									:: k_exp,k2_exp				! real variables
+integer*8, dimension(:), allocatable 	:: D,V,ptr					! int. 1D arrays
+integer*8, dimension(:,:), allocatable 	:: E_list,E_list_em			! int. 2D arrays
+real*8, dimension(:), allocatable 		:: ddd,cdd,ccdd 			! real 1D arrays 
+real*8, dimension(:), allocatable 		:: knn,c,knn_em,c_em		! real 1D arrays 
+
+!                           SIS DYNAMICS                           
+!-------------------------------------------------------------------
+integer*8 								:: Ni0,M					! int. variables
+real*8									:: lambda,delta,tmax 		! real variables
+real*8, dimension(:), allocatable 		:: times,rhos				! real 1D arrays
+
+
+
+!-------------------------------------------------------------------
+!           READING THE INPUT PATHS & CREATE DIRECTORIES                                                                               
 !-------------------------------------------------------------------
 
 CALL read_paths(edgelist_filepath,output_filespath)
@@ -247,7 +262,6 @@ CLOSE(3)
 !                        CONFIGURATION MODEL (CM)                     
 !-------------------------------------------------------------------
 
-
 ! run 'Niter' RW networks and calculate its properties (knn,c)
 Niter = 100
 DO i = 1, Niter
@@ -298,19 +312,10 @@ CLOSE(2)
 CLOSE(3)
 
 
+
 !-------------------------------------------------------------------
 !                           SYS DYNAMICS                     
 !-------------------------------------------------------------------
-
-!                      NETWORK CHARACTERIZATION
-!-------------------------------------------------------------------
-
-E = num_edges(edgelist_filepath)
-N = num_nodes(edgelist_filepath)
-E_list = edges_list(edgelist_filepath,E)
-D = node_degree(E_list)
-CALL node_neighbors(E_list,D,V,ptr)
-
 
 !                      NETWORK CHARACTERIZATION
 !-------------------------------------------------------------------
@@ -323,49 +328,31 @@ deallocate(V,ptr)
 CALL node_neighbors(E_list,D,V,ptr)
 
 
-!                            PARAMETERS
+!                            PARAMETERS                            
 !-------------------------------------------------------------------
 
-T = N ! number of events simulated
-M = 100 ! number of realizations
-delta = 1 ! recovery rate
+tmax = 100.d0 					! maximum time of the simulation
+M = 10 							! number of realizations
+delta = 1 						! recovery rate
 
 
 !        SINGLE REALIZATIONS BELOW/ABOVE THE CRITICAL POINT        
 !-------------------------------------------------------------------
 Ni0 = int(0.25*N) 												
 
-DO i = 1, 6
-	lambda = 0.0001*10**i 
-	WRITE(a, '(f14.8)') nint(lambda*1000.0) / 1000.0
+DO i = 1, 7
+	lambda = 0.0001*10**i		! infection rate
+
+	WRITE(a, '(f14.8)') nint(lambda*1000.d0) / 1000.d0
 	fname_SIS = trim(adjustl(output_filespath))//"/SIS/SIS-rho_t/SIS-rho_t_lambda"// &
 	trim(adjustl(a))// ".txt"
-	rho = SIS_model(E,N,D,V,ptr,lambda,delta,Ni0,T)
+	CALL SIS_model(E,N,Ni0,D,V,ptr,lambda,delta,tmax,times,rhos)
 	OPEN(0,file = trim(fname_SIS))
-	DO j = 1, T
-		write(0, '(f12.6)') (rho(j))
+	DO j = 1, size(times)
+		write(0, '(f20.8,5X,f20.8)') times(j), rhos(j)
 	END DO
-END DO
-
-
-!       		  	    LIFE-TIME DISTRIBUTION       		  	           			 
-!-------------------------------------------------------------------
-Ni0 = int(0.25*N) 
-
-DO i = 1, 100 - 1
-	lambda = EXP(log(0.001) + i * (log(1000.) - log(0.001)) / (100 - 1)) ! infection rate
-	WRITE(a, '(f14.8)') lambda
-	fname_SIS = trim(adjustl(output_filespath))//"/SIS/SIS-life_time/SIS-life_time_lambda"// trim(adjustl(a))// ".txt"
-	OPEN(0,file = trim(fname_SIS))
-	DO j = 1, M 
-		rho = SIS_model(E,N,D,V,ptr,lambda,delta,Ni0,T)
-		DO k = 1, T
-			if (rho(k) == 0) then
-				write(0, '(i0)') k
-				exit
-			end if
-		END DO
-	END DO
+	CLOSE(0)
+	deallocate(times,rhos)
 END DO
 
 
@@ -373,15 +360,15 @@ END DO
 !          AND DIFFERENT INITIAL NUMBER OF INFECTED NODES           
 !-------------------------------------------------------------------
 
-DO i = 0, 2
-	Ni0 = int(0.25*i*N) ! initial number of infected nodes
+DO i = 0, 3
+	Ni0 = int(0.25*i*N) 											! initial number of infected nodes
 	if (i == 0) then
 		Ni0 = 0.1*N
 	end if
 	DO j = 0, 100 - 1
-		lambda = EXP(log(0.001) + j * (log(1000.) - log(0.001)) / (100 - 1)) ! infection rate
+		lambda = EXP(log(0.001) + j * (log(1000.) - log(0.001)) / (100 - 1))
 		write(a, '(f14.8)') lambda
-		write(b, '(f14.8)') 0.25
+		write(b, '(f14.8)') nint(0.25*i*100.d0) / 100.d0
 		if (i == 0) then
 			write(b, '(f14.8)') 0.1
 		endif
@@ -389,11 +376,41 @@ DO i = 0, 2
 		trim(adjustl(b))//"N_lambda"// trim(adjustl(a))// ".txt"
 		OPEN(0,file = trim(fname_SIS))
 		DO k = 1, M
-			rho = SIS_model(E,N,D,V,ptr,lambda,delta,Ni0,T) ! empirical prevalence as a function of time
-			write(0, '(f12.6)') (rho(T))
+			CALL SIS_model(E,N,Ni0,D,V,ptr,lambda,delta,tmax,times,rhos)
+			write(0, '(f20.8)') rhos(size(rhos)-1)
+			deallocate(times,rhos)
 		END DO 
 		CLOSE(0)
 	END DO
+END DO
+
+
+!       		  	    LIFE-TIME DISTRIBUTION       		  	           			 
+!-------------------------------------------------------------------
+
+DO i = 1, 100-1
+	lambda = EXP(log(0.0001) + i * (log(0.01) - log(0.0001)) / (100 - 1)) 
+	write(a, '(f14.8)') nint(lambda*100000.d0) / 100000.d0
+	fname_SIS = trim(adjustl(output_filespath))//"/SIS/SIS-life_time/SIS-life_time_lambda"// &
+	trim(adjustl(a))//".txt"
+
+	OPEN(0,file = trim(fname_SIS))
+	write(0,fmt='(A5,18X,A1)') '# Ni0','T'
+	DO j = 0, 99
+		Ni0 = int(0.01*j*N)
+		if (j == 0) then
+			Ni0 = 1
+		end if
+		CALL SIS_model(E,N,Ni0,D,V,ptr,lambda,delta,tmax,times,rhos)
+		DO k = 1, size(times)
+			if ((rhos(k) == 0.d0)) then
+				write(0, '(i8,5X,f14.8)') Ni0, times(k)
+				exit
+			end if
+		END DO
+		deallocate(times,rhos)
+	END DO 
+	CLOSE(0)
 END DO
 
 
@@ -471,7 +488,6 @@ SUBROUTINE create_directory(dir_name)
     character(len=*), intent(in) :: dir_name
 	character(len=256) :: command
 	logical :: dir_exists
-    integer			   :: istat
 
 	inquire(file=dir_name, exist=dir_exists)
 	if (.not. dir_exists) then	
@@ -483,3 +499,5 @@ END SUBROUTINE create_directory
 
 
 END PROGRAM MAIN
+
+

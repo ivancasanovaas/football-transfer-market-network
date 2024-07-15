@@ -13,14 +13,17 @@
 
 MODULE SIS_DYNAMICS
 
+USE RANDOM_NUMBER_GENERATOR
+
 IMPLICIT NONE
 
 CONTAINS  ! define all the functions & subroutines
 
+
 !-------------------------------------------------------------------
 !                             SIS MODEL                                                  
 !-------------------------------------------------------------------
-! FUNCTION: SIS_model
+! SUBROUTINE: SIS_model
 ! PURPOSE: THe function applies the SIS model with the Gillepsie al-
 !		   gorithm supposing that the infection/recovery process are
 !		   Poisson processes. Given an initial number of infected
@@ -29,32 +32,39 @@ CONTAINS  ! define all the functions & subroutines
 ! INPUTS: 
 !	- E: number of edges
 !   - N: number of nodes
+!	- Ni0: number of initial infected nodes
 !   - D: list of degrees for each node
 !   - V: list of neighbors for each node
 !	- ptr: list with the positions, in V, of the first and last
 !			   neighbors for each node
 !	- lambda: infection rate
 !	- delta: recovery rate
-!	- Ni0: initial number of infected nodes
-!	- T: total number of events (an event is an infection or a recovery)
+!	- tmax: total time of the simulation
 ! OUTPUT:
-!   - rho: empirical prevalence as a function of time of nodes
+!	- times: times at which events occur
+!   - rhos: empirical prevalence as a function of time
 !-------------------------------------------------------------------
 
-FUNCTION SIS_model(E,N,D,V,ptr,lambda,delta,Ni0,T) result(rho)
 
-	integer*8								:: i,j,k,time				! auxiliar int.
-	integer*8, intent(in)					:: E,N						! int. variables
-	integer*8								:: T,Ni0,Ni,Ea				! int. variables
-	real*8									:: rnd_num					! auxiliar reals
-	real*8 									:: lambda,delta,p	 		! real variables
+SUBROUTINE SIS_model(E,N,Ni0,D,V,ptr,lambda,delta,tmax,times_print,rhos_print)
+
+	integer*8, intent(in) 					:: E,N,Ni0            			! int. variables
 	integer*8, dimension(:), intent(in) 	:: D,V,ptr					! int. arrays (1D)
-	integer*8, dimension(:), allocatable 	:: infected_nodes,stat   	! int. arrays (1D)
-	integer*8, dimension(:,:), allocatable 	:: E_list,active_links		! int. arrays (2D)
-	real*8, dimension(:), allocatable 		:: rho						! real arrays (1D)
+	real*8, intent(in) 						:: lambda,delta   			! real variables
+	real*8, intent(in) 						:: tmax						! real variables
 
+	integer*8, dimension(:), allocatable 	:: infected_nodes,stat		! int. arrays (1D)
+	integer*8, dimension(:,:), allocatable 	:: active_links				! int. arrays (2D)
+	real*8, dimension(:), allocatable 		:: times,rhos				! real arrays (1D)
+	real*8, dimension(:), allocatable 		:: times_print,rhos_print	! real arrays (1D)
 
-	! 				RANDOM NUMBER INITIALIZATION (SEED)
+	integer*8 								:: i,j,k,imcs,zero_index	! auxiliar int.
+	integer*8 								:: node,node1,node2			! auxiliar int.
+	integer*8 								:: Ni,Ea,Nmcs				! auxiliar int.
+	real*8 									:: rnd_num,p,pi				! auxiliar reals 
+	real*8 									:: t,tau					! auxiliar reals
+
+	! 				RANDOM NUMBER INITIALIZATION (SEED) 				
 	!-------------------------------------------------------------------
 	integer, dimension(:), allocatable :: state
 	integer :: state_size, iseed
@@ -69,237 +79,215 @@ FUNCTION SIS_model(E,N,D,V,ptr,lambda,delta,Ni0,T) result(rho)
 	iseed = nint(rnd*200.0d0 + 0.5d0)
 	CALL setr1279(iseed)
 
-
-	!                           PARAMETERS
+	!                            PARAMETERS                                                       
 	!-------------------------------------------------------------------
+	Nmcs = 1000000					! number of 'Monte Carlo' steps
 
-	allocate(rho(T))				! empirical prevalence
+	allocate(times(Nmcs))			! time recording for the change of prevalence
+	allocate(rhos(Nmcs))			! empirical prevalence evolution
 	allocate(infected_nodes(N))		! list with infected nodes
 	allocate(stat(N))				! list with the status of nodes (infected-1- or susceptible-0)
 	allocate(active_links(E,2))		! list with active links
-	
+
 	Ni = Ni0						! initial number of infected nodes
 	Ea = 0 							! initial number of active links 
 	infected_nodes = 0				! list with infected nodes
 	stat = 0						! list with the status of nodes (infected-1- or susceptible-0)
 	active_links = 0				! list with active links
-	rho = 0							! empirical prevalence
+	times = 0 						! event times
+	rhos = 0						! empirical prevalence
 
 
-	!                     INITIAL INFECTED NODES
+	!                        INITIAL CONDITIONS                                               
 	!-------------------------------------------------------------------
 
-	DO i = 1, Ni0
-
-		! set the intial list with infected nodes and their status
+	! setting the initial list with the infected nodes and the status
+	i = 0
+	DO WHILE (i < Ni0)
+		! choose a random node and infect it if possible
 		j = ceiling(r1279()*N)
-		infected_nodes(i) = j
-		stat(j) = 1
+		IF (stat(j) == 0) THEN
+			i = i + 1
+			infected_nodes(i) = j
+			stat(j) = 1
+		END IF
+	END DO 
 
-		! set the initial list with active links
+	! setting the initial list with the active links
+	DO i = 1, Ni0
+		j = infected_nodes(i) ! infected node
 		DO k = ptr(j), ptr(j+N) ! for all neighbors V(k) of node j
 			if (stat(V(k)) == 0) then
 				Ea = Ea + 1
+				if (Ea > E) then
+					print*, 'ERROR: Active links exceeds number of edges (initialization)'
+					stop
+				end if
 				active_links(Ea,1) = j ! infected node
 				active_links(Ea,2) = V(k) ! susceptible neighbor
 			end if
-		END DO
+		END DO		
 	END DO
 
+	rhos(1) = dble(Ni0) / N
+	times(1) = 0.d0
 
 	!                     		    DYNAMICS
 	!-------------------------------------------------------------------
+	t = 0.d0
+	imcs = 1
 
-	! for T time steps
-	DO time = 1, T
+	DO WHILE (t <= tmax)
 
-		p = Ea*lambda / (Ni*delta + Ea*lambda) ! probability of choosing infection as a type event
+		! probability of an event (infection or recovery) 
+		if (Ni == 0) then
+			p = Ea*lambda
+		else if (Ni == N) then
+			p = Ni*delta
+		else
+			p = Ni*delta + Ea*lambda
+		end if
+		if (p == 0.d0) exit ! end of the dynamics when no events are possible
+
+		! generate a time for next event (Poisson process)
+		tau = -log(r1279()) / p 
+		t = t + tau
+		imcs = imcs + 1
+		
+		! probability of choosing infection as a type event
+		if (Ni == N) then
+			pi = 0.d0
+		else
+			pi =  Ea * lambda / p
+		end if
+
 		rnd_num = r1279() ! random number
 
-	!                     		   INFECTIONS
-	!-------------------------------------------------------------------
 
+		!                     		   INFECTIONS
+		!-------------------------------------------------------------------
 		! if the type event is an INFECTION
-		IF (rnd_num <= p) THEN
+		IF (rnd_num <= pi) THEN
 
 			! choose randomly an active link and infect the susceptible node
-			i = active_links(ceiling(r1279()*Ea),2)
-			stat(i) = 1
+			node = active_links(ceiling(r1279()*Ea),2)
+			stat(node) = 1
 
 			! update the list of infected nodes
 			Ni = Ni + 1
-			infected_nodes(Ni) = i
-
-			! update the list of active links, summing the susceptible neighbors of the new infected node
-			DO j = ptr(i), ptr(i+N) 
-				if (stat(V(j)) == 0) then
-					Ea = Ea + 1
-					active_links(Ea,1) = i ! infected node
-					active_links(Ea,2) = V(j) ! susceptible neighbor
-				end if
-			END DO
+			infected_nodes(Ni) = node
 
 			! update the list of active links, dropping out links with both nodes infected and setting the last ones to these positions
-			DO k = 1, Ea
-				if (stat(active_links(k,2)) == 1) then
-					active_links(k,1) = active_links(Ea,1)
-					active_links(k,2) = active_links(Ea,2)
+			k = 1
+			DO
+				if (active_links(k,2) == node) then
+					node1 = active_links(Ea,1)
+					node2 = active_links(Ea,2)
+					active_links(k,1) = node1
+					active_links(k,2) = node2
 					active_links(Ea,1) = 0
 					active_links(Ea,2) = 0
 					Ea = Ea - 1
+				else
+					k = k + 1
+				end if
+				if (k > Ea) exit
+			END DO
+
+			! update the list of active links, summing the susceptible neighbors of the new infected node
+			DO j = ptr(node), ptr(node+N) 
+				if (stat(V(j)) == 0) then
+					Ea = Ea + 1
+					if (Ea > E) then
+						print*, 'ERROR: Active links exceeds number of edges (infection)'
+						stop
+					end if
+					active_links(Ea,1) = node
+					active_links(Ea,2) = V(j)
 				end if
 			END DO
-		END IF
-
-	!                     		   RECOVERIES
-	!-------------------------------------------------------------------
-
+		
+		!                     		   RECOVERIES
+		!-------------------------------------------------------------------
 		! if the type event is a RECOVERY
-		IF (rnd_num > p) THEN
-			
-			! choose randomly one of the infected nodes to recover
-			i = infected_nodes(ceiling(r1279()*Ni))
-			stat(i) = 0
+		ELSE IF (rnd_num > pi) THEN
 
+			! choose randomly one of the infected nodes to recover
+			node = infected_nodes(ceiling(r1279()*Ni))
+			stat(node) = 0
+			Ni = Ni - 1
+			
 			! update the list of infected nodes, dropping the recovered one and setting the last one to that position
-			j = infected_nodes(Ni)
-			stat(j) = 0
+			j = infected_nodes(Ni + 1)
+			infected_nodes(Ni + 1) = 0
 			DO k = 1, Ni
-				if (infected_nodes(k) == i) then
+				if (infected_nodes(k) == node) then
 					infected_nodes(k) = j
+					exit
 				end if
 			END DO
-			infected_nodes(Ni) = 0
-			Ni = Ni - 1
 
-			! update the list of active links, dropping out links with both nodes susceptible and setting the last ones to these positions
-			DO k = 1, Ea
-				if (stat(active_links(k,1)) == 0) then
-					active_links(k,1) = active_links(Ea,1)
-					active_links(k,2) = active_links(Ea,2)
+			! update the list of active links, dropping links with both nodes susceptible and setting the last ones to these positions
+			k = 1
+			DO
+				if (active_links(k,1) == node) then
+					node1 = active_links(Ea,1)
+					node2 = active_links(Ea,2)
+					active_links(k,1) = node1
+					active_links(k,2) = node2
 					active_links(Ea,1) = 0
 					active_links(Ea,2) = 0
 					Ea = Ea - 1
+				else 
+					k = k + 1
 				end if
+				if (k > Ea) exit
 			END DO
-
+			
 			! update the list of active links, summing the infected neighbors of the new susceptible node
-			DO j = ptr(i), ptr(i+N) 
+			DO j = ptr(node), ptr(node+N) 
 				if (stat(V(j)) == 1) then
 					Ea = Ea + 1
-					active_links(Ea,1) = V(j) ! infected neighbor
-					active_links(Ea,2) = i ! susceptible node
+					if (Ea > E) then
+						print*, 'ERROR: Active links exceeds number of edges (recovery)'
+						stop
+					endif
+					active_links(Ea,1) = V(j) 
+					active_links(Ea,2) = node
 				end if
 			END DO
+
 		END IF
-		rho(time) = dble(Ni) / N
+
+		times(imcs) = t
+		rhos(imcs) = dble(Ni) / N
+		
 	END DO
 
-END FUNCTION SIS_model
+	!                         CUTTING THE ARRAYS
+	!-------------------------------------------------------------------
 
+	! if finding a 0 in the prevalence
+    zero_index = -1
+    DO imcs = 1, Nmcs - 1
+        if ((times(imcs) == 0.d0) .and. (times(imcs+1) == 0.d0)) then
+            zero_index = imcs
+            exit
+        end if
+    END DO
 
+	! if not finding a 0 in the prevalence
+    if (zero_index == -1) then
+        zero_index = Nmcs + 1
+    end if
 
-!-------------------------------------------------------------------
-!					   RANDOM NUMBER GENERATOR
-!-------------------------------------------------------------------
-! FUNCTIONS & SUBROUTINES: r1279(),setr1279(iseed), ran2(idum)
-! PURPOSE: Generates a number maximally random
-! INPUTS: 
-!   - iseed: seed selected
-! OUTPUT:
-!   - random number
-!-------------------------------------------------------------------
+    ! create new arrays with no zeros in prevalence
+    allocate(times_print(zero_index-1))
+	allocate(rhos_print(zero_index-1))
+    times_print = times(1:zero_index-1)
+    rhos_print = rhos(1:zero_index-1)
 
-FUNCTION r1279()
-
-    IMPLICIT NONE
-    INCLUDE "r1279block.h"
-    REAL    r1279, inv_max
-    REAL    INV_MAXINT 
-    PARAMETER (INV_MAXINT = 1.0/2147483647.)
-
-    ioffset = iand(ioffset + 1, 2047)
-    irand(ioffset) = (irand(index1(ioffset))*irand(index2(ioffset)))
-    r1279 = ishft(irand(ioffset), -1) * INV_MAXINT
-
-END FUNCTION
-
-SUBROUTINE setr1279(iseed)
-
-    IMPLICIT	NONE
-    INCLUDE "r1279block.h"
-    INTEGER	ibit, ispoke, one_bit, iseed, localseed, NBITM1
-    PARAMETER (NBITM1 = 31)
-	!
-	!	Initialize ioffset. This will be increased by (1 mod 2048) for
-	!	each random number which is called. 
-	!
-    ioffset = 0
-	!
-	!	Set up the two arrays which give locations of the two random
-	!	numbers which will be multiplied to get the new random number
-	!
-    do ispoke = 0, 2047
-	index1(ispoke) = iand(ispoke - 1279, 2047)
-	index2(ispoke) = iand(ispoke - 418, 2047)
-    end do
-	!
-	!	set up the initial array of 2048 integer random numbers
-	!	Each bit is separately initialized using ran2 from numerical recipes
-	!
-    localseed = -abs(iseed)
-
-
-	! Matteo:  I have substituted lshift with ishft
-
-
-    do ispoke = 0, 2047
-
-	irand(ispoke) = 0
-	do ibit = 0, NBITM1
-	    one_bit = 0
-	    if (ran2(localseed) > 0.5) one_bit = 1
-	    irand(ispoke) = ior(irand(ispoke), ishft(one_bit, ibit))
-	end do
-	irand(ispoke) = 2 * irand(ispoke) + 1
-
-    end do
-
-END SUBROUTINE
-
-FUNCTION ran2(idum)
-      INTEGER idum,IM1,IM2,IMM1,IA1,IA2,IQ1,IQ2,IR1,IR2,NTAB,NDIV
-      REAL ran2,AM,EPS,RNMX
-      PARAMETER (IM1=2147483563,IM2=2147483399,AM=1./IM1,IMM1=IM1-1, &
-      IA1=40014,IA2=40692,IQ1=53668,IQ2=52774,IR1=12211,IR2=3791, &
-      NTAB=32,NDIV=1+IMM1/NTAB,EPS=1.2e-7,RNMX=1.-EPS)
-      INTEGER idum2,j,k,iv(NTAB),iy
-      SAVE iv,iy,idum2
-      DATA idum2/123456789/, iv/NTAB*0/, iy/0/
-      if (idum.le.0) then
-        idum=max(-idum,1)
-        idum2=idum
-        do 11 j=NTAB+8,1,-1
-          k=idum/IQ1
-          idum=IA1*(idum-k*IQ1)-k*IR1
-          if (idum.lt.0) idum=idum+IM1
-          if (j.le.NTAB) iv(j)=idum
- 11     continue
-        iy=iv(1)
-      endif
-      k=idum/IQ1
-      idum=IA1*(idum-k*IQ1)-k*IR1
-      if (idum.lt.0) idum=idum+IM1
-      k=idum2/IQ2
-      idum2=IA2*(idum2-k*IQ2)-k*IR2
-      if (idum2.lt.0) idum2=idum2+IM2
-      j=1+iy/NDIV
-      iy=iv(j)-idum2
-      iv(j)=idum
-      if(iy.lt.1)iy=iy+IMM1
-      ran2=min(AM*iy,RNMX)
-      return
-END FUNCTION
+END SUBROUTINE SIS_model
 
 
 END MODULE SIS_DYNAMICS

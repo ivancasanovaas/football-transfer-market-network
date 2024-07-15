@@ -187,7 +187,7 @@ SUBROUTINE node_neighbors(E_list,D,V,ptr)
 	integer*8								:: E,N					! int. variables
 	integer*8, dimension(:,:), intent(in)	:: E_list				! int. arrays (2D)
 	integer*8, dimension(:), intent(in) 	:: D 					! int. arrays (1D)
-	integer*8, dimension(:), allocatable 	:: V,ptr			! int. arrays (1D)
+	integer*8, dimension(:), allocatable 	:: V,ptr				! int. arrays (1D)
 
 	E = size(E_list, 1)
 	N = maxval(E_list)
@@ -216,6 +216,10 @@ SUBROUTINE node_neighbors(E_list,D,V,ptr)
 		endif
 	ENDDO
 
+	DO i = 1, N
+		ptr(i+N) = ptr(i+N) - 1
+	END DO
+	
 END SUBROUTINE node_neighbors
 
 

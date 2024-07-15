@@ -7,7 +7,7 @@ This folder contains the results obtained running the script `exe.sh` from the c
 
 When executing the main program `main.f95`, it outputs several files divided in two folders: `properties` and `SIS`. On the one hand, the extracted network structural properties are:
 
-- Printing to screen the number of nodes `N`, the number of edges `E` and the average node degree `<k>`.
+- Printing to screen the number of nodes `N`, the number of edges `E`, the average node degree `<k>`, and the ratio  `<k2>/ <k>`.
 - `degrees.txt`: list of degrees for each node
 - `neighbors.txt`: list of neighbors for each node
 - `pointer.txt`: list with the positions, in V, of the first and last neighbors for each node
@@ -18,7 +18,7 @@ When executing the main program `main.f95`, it outputs several files divided in 
 - `knn_cm1.txt` and `c_cm1.txt`: average nearest neighbors degree and clustering coefficient as a function of the degree for 1 CM network
 - `knn_cm100.txt` and `c_cm100.txt`: average nearest neighbors degree and clustering coefficient as a function of the degree for 100 CM networks (averaged)
 
-On the other hand, the Susceptible-Infected-Susceptible dynamics provides 3 interesting magnitudes to measure as a function of 2 parameters (initial number of infected nodes, and the infection rate):
+On the other hand, the Susceptible-Infected-Susceptible dynamics provides 3 interesting magnitudes to measure as a function of 2 parameters (the initial number of infected nodes and the infection rate):
 
 - `SIS-life_time`: life-time distributions
 - `SIS-rho_st`: average steady-state prevalence
@@ -26,4 +26,9 @@ On the other hand, the Susceptible-Infected-Susceptible dynamics provides 3 inte
 
 ## Output figures (`figs`)
 
-The output figures can be modelled from the Jupyter Notebook `plots.ipynb` in a simple manner.
+The output figures can be modelled from the Jupyter Notebook `plots.ipynb` in a simple manner:
+
+1. **Degree distributions**: Direct and complementary cumulative (b) degree distributions of the football transfer market network.
+2. **Correlations**: Average nearest neighbors degree and average clustering coefficient of the football transfer market network.
+3. **Prevalences**: Empirical prevalence evolution and average steady-state prevalence as a function of the infection rate.
+4. **Life-time distributions**: 
