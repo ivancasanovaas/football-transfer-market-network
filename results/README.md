@@ -31,4 +31,4 @@ The output figures can be modelled from the Jupyter Notebook `plots.ipynb` in a 
 1. **Degree distributions**: Direct and complementary cumulative (b) degree distributions of the football transfer market network.
 2. **Correlations**: Average nearest neighbors degree and average clustering coefficient of the football transfer market network.
 3. **Prevalences**: Empirical prevalence evolution and average steady-state prevalence as a function of the infection rate.
-4. **Life-time distributions**: 
+4. **Life-time distributions**: for a fixed infection rate and different initial number of infected nodes; for fixed initial number of infected nodes and different infection rates.
