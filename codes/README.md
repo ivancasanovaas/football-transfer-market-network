@@ -1,6 +1,6 @@
 # Codes
 
-This folder contains the necessary codes to reproduce the results shown in the [report](../football-transfer-market-network.pdf). The programing language is FORTRAN95, as it is more efficient to compute properties and simulate network dynamics, but the plots are generated with the [MatPlotLib library](https://matplotlib.org/), from [Python](https://www.python.org/).
+This folder contains the necessary codes to reproduce the results shown in the [report](../report.pdf). The programing language is FORTRAN95, as it is more efficient to compute properties and simulate network dynamics, but the plots are generated with the [MatPlotLib library](https://matplotlib.org/), from [Python](https://www.python.org/).
 
 ## Modules
 
